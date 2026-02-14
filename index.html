@@ -1,0 +1,1104 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lakshya Security | Professional Security Services</title>
+    <meta name="description"
+        content="Premium security services for corporate, events, and residential needs. Trusted, reliable, and professional manned guarding.">
+    <link href="./dist/css/output.css" rel="stylesheet">
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Outfit:wght@500;700;800&display=swap"
+        rel="stylesheet">
+    <!-- AOS CSS -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        /* Custom Animations */
+        @keyframes fadeUp {
+            from {
+                opacity: 0;
+                transform: translateY(20px);
+            }
+
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        /* Hero Slider Animation */
+        @keyframes fadeZoom {
+            0% {
+                opacity: 0;
+                transform: scale(1);
+            }
+
+            5% {
+                opacity: 1;
+            }
+
+            33% {
+                opacity: 1;
+                transform: scale(1.1);
+            }
+
+            38% {
+                opacity: 0;
+            }
+
+            100% {
+                opacity: 0;
+            }
+        }
+
+        .hero-slide {
+            position: absolute;
+            inset: 0;
+            background-size: cover;
+            background-position: center;
+            opacity: 0;
+            animation: fadeZoom 15s infinite;
+        }
+
+        .hero-slide:nth-child(1) {
+            animation-delay: 0s;
+        }
+
+        .hero-slide:nth-child(2) {
+            animation-delay: 5s;
+        }
+
+        .hero-slide:nth-child(3) {
+            animation-delay: 10s;
+        }
+
+        .hero-overlay {
+            background: linear-gradient(to right, rgba(15, 42, 19, 0.85), rgba(42, 36, 15, 0.4));
+        }
+
+        /* Ensure text is clearly visible */
+        .hero-content {
+            text-shadow: 0 2px 4px rgba(225, 27, 27, 0.5);
+        }
+
+        /* Floating Animation */
+        @keyframes float {
+            0% {
+                transform: translateY(0px);
+            }
+
+            50% {
+                transform: translateY(-15px);
+            }
+
+            100% {
+                transform: translateY(0px);
+            }
+        }
+
+        .animate-float {
+            animation: float 6s ease-in-out infinite;
+        }
+    </style>
+</head>
+
+<body class="font-sans text-gray-800 antialiased overflow-x-hidden">
+
+    <!-- Header -->
+    <header class="fixed w-full z-50 transition-all duration-300 bg-white/90 backdrop-blur-md shadow-sm" id="navbar">
+        <div class="container   px-4 py-2 flex justify-between items-center">
+            <!-- Logo -->
+            <a href="https://www.lakshyasecuritygwl.com/" target="_blank" rel="noopener noreferrer"
+                class="flex items-center gap-3">
+
+                <img src="https://www.lakshyasecuritygwl.com/wp-content/uploads/2019/07/A-New-Design-Made-with-PosterMyWall-25.jpg"
+                    alt="Lakshya Security Logo" class="h-14 w-auto object-contain" />
+
+            </a>
+
+            <!-- Replace 'src' above with your actual logo URL, e.g., './assets/logo.png' -->
+            </a>
+
+            <nav class="hidden md:flex space-x-8">
+                <a href="#services" class="font-medium text-gray-600 hover:text-lakshya-blue transition">Services</a>
+                <a href="#about" class="font-medium text-gray-600 hover:text-lakshya-blue transition">Why Us</a>
+                <a href="#clients" class="font-medium text-gray-600 hover:text-lakshya-blue transition">Clients</a>
+                <a href="#contact" class="font-medium text-gray-600 hover:text-lakshya-blue transition">Contact</a>
+            </nav>
+
+            <a href="tel:+911234567890"
+                class="hidden md:inline-flex items-center px-6 py-2 bg-lakshya-blue text-white rounded-full font-medium hover:bg-opacity-90 transition transform hover:-translate-y-0.5">
+                <i class="fas fa-phone-alt mr-2"></i> Call Now
+            </a>
+
+            <!-- Mobile Menu Button -->
+            <button id="mobile-menu-btn" class="md:hidden text-2xl text-lakshya-blue focus:outline-none ">
+                <i class="fas fa-bars"></i>
+            </button>
+        </div>
+
+        <!-- Mobile Menu -->
+        <div id="mobile-menu"  class="fixed top-0 right-0 w-3/4 h-screen bg-white z-[999]
+    transform translate-x-full transition-transform duration-300
+    flex flex-col pt-24 px-6 md:hidden shadow-2xl">
+            <a href="#services" class="mobile-link text-xl font-medium py-4 border-b border-gray-500">Services</a>
+            <a href="#about" class="mobile-link text-xl font-medium py-4 border-b border-gray-500">Why Us</a>
+            <a href="#clients" class="mobile-link text-xl font-medium py-4 border-b border-gray-500">Clients</a>
+            <a href="#contact" class="mobile-link text-xl font-medium py-4 border-b border-gray-500">Contact</a>
+            <a href="#GALLERY" class="mobile-link text-xl font-medium py-4 border-b border-gray-500">Gallery</a>
+            <a href="#about" class="mobile-link text-xl font-medium py-4 border-b border-gray-500">About Us</a>
+            <button id="close-menu-btn" class="absolute top-6 right-6 text-3xl text-gray-500">
+                <i class="fas fa-times"></i>
+            </button>
+            <img src="https://www.lakshyasecuritygwl.com/wp-content/uploads/2019/07/A-New-Design-Made-with-PosterMyWall-25.jpg"
+                    alt="Lakshya Security Logo" class="h-14 w-auto absolute top-6 left-6 text-3xl text-gray-500" />
+        </div>
+    </header>
+
+    <section class="relative h-auto md:h-[80vh] 
+pt-20 overflow-x-hidden md:overflow-hidden 
+bg-gray-900 px-4 md:px-10 lg:px-16 rounded-10xl" >
+
+        <!-- Background Slider -->
+        <div class="absolute inset-0 z-0 md:px-10 lg:px-16">
+            <!-- Slide 1: Guard -->
+            <div class="hero-slide" style="
+       background-image: url('https://images.jagicbox.com/comp/gwalior/s5/9999px751.x751.180321102300.q2s5/catalogue/lakshya-security-and-facility-services-deen-dayal-nagar-gwalior-armed-security-services-9bxaoxe9qn-250.jpg');
+       height: 70vh;
+       width: 80%;
+       background-size: cover;
+       background-position: center top;
+       background-repeat: no-repeat;
+       margin: 0 auto;
+     ">
+            </div> <!-- Slide 2: CCTV/Monitor -->
+            <div class="hero-slide"
+                style="background-image: url('https://iges.unsplash.com/photo-1558036117-15ea630882d5?q=80&w=1920&auto=format&fit=crop');">
+            </div> <!-- Slide 3: Corporate Building -->
+            <div class="hero-slide"
+                style="background-image: url('https://ages.unsplash.com/photo-1486406146926-c627a92ad1ab?q=80&w=1920&auto=format&fit=crop');">
+            </div>
+        </div>
+
+
+
+
+
+        <!-- Abstract Shapes -->
+        <div
+            class="absolute top-0 right-0 w-1/2 h-full bg-lakshya-/20 rounded-l-full blur-3xl translate-x-1/3 z-10 pointer-events-none">
+        </div>
+        <div
+            class="absolute bottom-0 left-0 w-72 h-72 bg-lakshya-gold/10 rounded-full blur-3xl -translate-x-1/2 translate-y-1/2 z-10 pointer-events-none">
+        </div>
+
+        <!-- Content -->
+        <div class="relative z-15 h-full">
+            <div class="container mx-auto px-6 md:px-10 h-full">
+                <div class="grid md:grid-cols-2 gap-12 h-full">
+
+                    <!-- LEFT CONTENT -->
+                    <div class="flex flex-col justify-center">
+
+                        <h2 class="text-3xl md:text-3xl lg:text-5xl font-extrabold text-white leading-tight mb-6">
+                            We Guard. <br>
+                            <span
+                                class="text-transparent bg-clip-text bg-gradient-to-r from-lakshya-gold to-yellow-200">
+                                You Prosper.
+                            </span>
+                        </h2>
+
+                        <p class="text-base text-white mb-8 max-w-lg">
+                            Professional manned guarding and electronic security services tailored for corporate and
+                            residential peace of mind.
+                        </p>
+
+
+                        <div class="flex flex-col sm:flex-row gap-4">
+                            <a href="tel:+911234567890"
+                                class="px-8 py-4 bg-lakshya-gold text-black rounded-xl font-bold shadow-lg hover:-translate-y-1 transition">
+                                📞 Get Immediate Security
+                            </a>
+
+                            <a href="https://wa.me/911234567890" target="_blank"
+                                class="px-8 py-4 bg-green-500 text-white rounded-xl font-bold shadow-lg hover:-translate-y-1 transition">
+                                💬 WhatsApp Us
+                            </a>
+                        </div>
+
+                        <!-- Trust Indicators -->
+                        <div class="mt-4 flex gap-8 border-t border-gray-700/50 pt-5">
+                            <div>
+                                <div class="text-3xl font-bold text-white counter" data-target="15">0</div>
+                                <div class="text-sm text-gray-400">Years Experience</div>
+                            </div>
+                            <div>
+                                <div class="text-3xl font-bold text-white counter" data-target="900">0</div>
+                                <div class="text-sm text-gray-400">Active Guards</div>
+                            </div>
+                            <div>
+                                <div class="text-2xl font-bold text-white counter" data-target="100">0</div>
+                                <div class="text-sm text-gray-400">Happy Clients</div>
+
+                            </div>
+
+
+
+                        </div>
+                    </div>
+
+                    <!-- RIGHT INFO PANEL -->
+                    <div
+                        class="flex items-center justify-center md:justify-end mt-12 md:mt-0 order-first md:order-last">
+                        <div class="bg-lime-20/90 backdrop-blur-md rounded-3xl shadow-xl p-8 w-full max-w-md md:ml-auto border border-lime-100 transform transition-all duration-500 hover:scale-[1.02] hover:shadow-2xl"
+                            data-aos="fade-left" data-aos-duration="1000" data-aos-delay="300">
+
+                            <div class="space-y-6">
+                                <!-- Block 1: Opening Times -->
+                                <div class="flex items-start gap-2 group">
+                                    <div
+                                        class="w-10 h-10 bg-white rounded-full flex items-center justify-center shadow-sm shrink-0 group-hover:bg-lime-500 transition-colors duration-300">
+                                        <i
+                                            class="far fa-clock text-lime-600 group-hover:text-white transition-colors duration-300"></i>
+                                    </div>
+                                    <div>
+                                        <h3 class="font-bold text-white font-heading text-sm mb-1">Opening Times</h3>
+                                        <p class="text-xs text-white font-medium">Monday – Saturday</p>
+                                        <p class="text-xs font-bold text-white">09:00 – 18:00</p>
+                                    </div>
+                                </div>
+
+                                <!-- Block 2: Location -->
+                                <div class="flex items-start gap-4 group">
+                                    <div
+                                        class="w-10 h-10 bg-white rounded-full flex items-center justify-center shadow-sm shrink-0 group-hover:bg-lime-500 transition-colors duration-300">
+                                        <i
+                                            class="fas fa-map-marker-alt text-lime-600 group-hover:text-white transition-colors duration-300"></i>
+                                    </div>
+                                    <div>
+                                        <h3 class="font-bold text-white font-heading text-sm mb-1">Our Location</h3>
+                                        <p class="text-xs text-white font-medium leading-relaxed">Kothari House,
+                                            GH-944,<br>D.D Nagar, Gwalior M.P India</p>
+                                    </div>
+                                </div>
+
+                                <!-- Block 3: Customer Support -->
+                                <div class="flex items-start gap-4 group">
+                                    <div
+                                        class="w-10 h-10 bg-white rounded-full flex items-center justify-center shadow-sm shrink-0 group-hover:bg-lime-500 transition-colors duration-300">
+                                        <i
+                                            class="fas fa-headset text-lime-600 group-hover:text-white transition-colors duration-300"></i>
+                                    </div>
+                                    <div>
+                                        <h3 class="font-bold text-white font-heading text-sm mb-1">Customer Support
+                                        </h3>
+                                        <a href="tel:+919522280831"
+                                            class="text-white font-extrabold text-lakshya-light hover:text-lime-600 transition-colors block mt-1">+91
+                                            95222 80831</a>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+    </section>
+
+    <!-- Animated Info Section -->
+
+
+
+
+
+    <!-- Services Section -->
+    <section id="services" class="py-10 bg-gray-50">
+        <div class="container mx-auto px-6">
+            <div class="text-center mb-16" data-aos="fade-up">
+                <span class="text-lakshya-gold font-bold uppercase tracking-wider text-2xl
+                 md:text-3xl">Our Expertise</span>
+                <h2 class="text-2xl md:text-3xl font-heading font-bold text-lakshya-dark mt-3">Comprehensive Security
+                    Services</h2>
+                <div class="w-24 h-1 bg-lakshya-blue mx-auto mt-6"></div>
+            </div>
+
+            <div class="grid md:grid-cols-4 gap-8">
+                <!-- Service 1 -->
+                <div class="bg-white rounded-xl shadow-lg hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-2 group overflow-hidden"
+                    data-aos="fade-up" data-aos-delay="0">
+                    <div class="h-48 overflow-hidden">
+                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSYPZhCirbAa0G5iR-ZFzF-g9nmHCAFM211L7G1BNf1wK1qO5XRWDwVmAE&s"
+                            alt="Manned Guarding"
+                            class="w-full h-full object-cover group-hover:scale-110 transition duration-500">
+                    </div>
+                    <div class="p-8">
+                        <div
+                            class="w-14 h-14 bg-lakshya-blue text-white rounded-lg flex items-center justify-center text-2xl mb-6 shadow-lg shadow-lakshya-blue/30 group-hover:bg-lakshya-gold transition">
+                            <i class="fas fa-user-shield"></i>
+                        </div>
+                        <h3 class="text-2xl font-bold text-lakshya-dark mb-3">Guarding Service</h3>
+                        <p class="text-gray-600 mb-6">With its own training academies in THREE states and a service
+                            network the company is able to give employment to over 500 security personnel in various
+                            sectors.</p>
+                        <a href="#"
+                            class="text-lakshya-blue font-semibold hover:text-lakshya-gold transition flex items-center">Learn
+                            More <i class="fas fa-arrow-right ml-2 text-sm"></i></a>
+                    </div>
+                </div>
+
+                <!-- Service 2 -->
+                <div class="bg-white rounded-xl shadow-lg hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-2 group overflow-hidden"
+                    data-aos="fade-up" data-aos-delay="100">
+                    <div class="h-48 overflow-hidden">
+                        <img src="data:image/jpeg;base64,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"
+                            alt="Electronic Security"
+                            class="w-full h-full object-cover group-hover:scale-110 transition duration-500">
+                    </div>
+                    <div class="p-8">
+                        <div
+                            class="w-14 h-14 bg-lakshya-blue text-white rounded-lg flex items-center justify-center text-2xl mb-6 shadow-lg shadow-lakshya-blue/30 group-hover:bg-lakshya-gold transition">
+                            <i class="fas fa-video"></i>
+                        </div>
+                        <h3 class="text-2xl font-bold text-lakshya-dark mb-3">Housekeeping Services</h3>
+                        <p class="text-gray-600 mb-6">Lakshya Security was set up to take care of the changing
+                            housekeeping landscape, with clients wanting better solutions to their institutional
+                            cleaning needs.</p>
+                        <a href="#"
+                            class="text-lakshya-blue font-semibold hover:text-lakshya-gold transition flex items-center">Learn
+                            More <i class="fas fa-arrow-right ml-2 text-sm"></i></a>
+                    </div>
+                </div>
+
+                <!-- Service 3 -->
+                <div class="bg-white rounded-xl shadow-lg hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-2 group overflow-hidden"
+                    data-aos="fade-up" data-aos-delay="200">
+                    <div class="h-48 overflow-hidden">
+                        <img src="https://images.unsplash.com/photo-1517048676732-d65bc937f952?q=80&w=800&auto=format&fit=crop"
+                            alt="Event Security"
+                            class="w-full h-full object-cover group-hover:scale-110 transition duration-500">
+                    </div>
+                    <div class="p-8">
+                        <div
+                            class="w-14 h-14 bg-lakshya-blue text-white rounded-lg flex items-center justify-center text-2xl mb-6 shadow-lg shadow-lakshya-blue/30 group-hover:bg-lakshya-gold transition">
+                            <i class="fas fa-calendar-check"></i>
+                        </div>
+                        <h3 class="text-2xl font-bold text-lakshya-dark mb-3">Staffing Services</h3>
+                        <p class="text-gray-600 mb-6">Staffing Vertical, prides in having successfully executed various
+                            job role requirements at the white Collar level in the sectors like, tailoring,
+                            manufacturing, services etc.</p>
+                        <a href="#"
+                            class="text-lakshya-blue font-semibold hover:text-lakshya-gold transition flex items-center">Learn
+                            More <i class="fas fa-arrow-right ml-2 text-sm"></i></a>
+                    </div>
+                </div>
+                <!-- Service 4 -->
+
+                <div class="bg-white rounded-xl shadow-lg hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-2 group overflow-hidden"
+                    data-aos="fade-up" data-aos-delay="200">
+                    <div class="h-48 overflow-hidden">
+                        <img src="data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wCEAAkGBxQTEhUTExIWFRUXGB4aGBgXGB4YGBcdIBoXGxgaHRoYHSggGholGxgaITEhJSkrLi4uFx8zODMtNygtLisBCgoKDg0OGxAQGy8lICYvMjAtLS0tLS0tNistLTAtLzItLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLf/AABEIAOEA4QMBIgACEQEDEQH/xAAcAAABBQEBAQAAAAAAAAAAAAAGAAMEBQcCAQj/xABQEAABAwIDBAYFCAcGAgkFAAABAgMRACEEEjEFBkFREyJhcYGRBzKhscEUI0JSYrLR8BUzcoKSosIWJFNz0uFj4hclNDWDs7TT8QhDVGR0/8QAGwEAAgMBAQEAAAAAAAAAAAAAAwQCBQYBBwD/xAA5EQABAwIEAgYIBQQDAAAAAAABAAIDBBEFEiExQVETIjJhcYEGFDNCkaGxwSM0UmLwFXLR4TWisv/aAAwDAQACEQMRAD8AHVGvdnXdB5SrWNB29pFNrNS9k2Q4ogxZOigOZ6wty8qTxSXSy9XqXZY7c9FX7bflYTJsCbxxI4ix0qJgF9b88jTWMdBdVGkkcOBA4WOmtc4NcGe0UrD1AFXNff5ratzdoF7DYUkyQvL5G3sqz372Q0/hVrc6paQpYVygGfAgkeNCHolelAb+o6fuA0db5/8AYcV/kr+6at5bFo8FiJYyKnIdOt8iVhG9mHUkMpCSVKlMC8wdLazmFUWymnumLaMOt1euQZwqLX6hBAuLm3Wo02WyX0lWXMrDoJB4hskBQ7xa/KRwE+ej05trvf8A85H/AKce+hNkBbshVdI+mmMZO23gmsNhHJh/B4lhIB6yCvqL1SVF0GEdUjX41C3XwZVmdKsqQMqtSVaFZgD1QYjtTwijvf7EKeaWy0sJC1w4QTmGRSzFjoZIMxYUPYHFgNBjo8pSAkLzQ2q8eqTCjHHiSqoTOv2UqxxtYm6fbwCgW1NnOmUyNCJmVCdb5ZHfxFEr20FuIyk+qPVkQDI0ANxfTu51A2WpuSsKMoBGnCLASMwEDs41HdwpLyVZozgQFdWFdUQL2JNgOZPiha3U2U7kq2QhS0TmACheNe3xjjFR1YcK1GUARMxniCmdZEk8dYNNN4yV5FHIoghINpIuCm8Qb3GscaaQ+lJupRuYTrYiLATP4UItLDZQJCvNjKyvpmQkjWRObW82In8zR8Ky3Z+OJVByhIHGADMRfhrxrQtkYzO2JWFq0MCL9vCm6YkdUrjTcKwpUqj47EZEFQAJ4CYn8aaNhqVJdnEpCsuYZomOyqLaW3+DchQMGR3QR7ao39oZnDAhRuTHORHZ7Kh4pRAzEK08LnSTx1tSrpnE2C7orzDbwLSkpgWOvH8xxqt2ttJboEiSmZi0yRERMH88JqoTjCCUgRYxr1h28ppjF7T0zWI5zby8ai5ztiog3KmYWekCQLgAQblNra8yZtWl5AJJMAewVkmzMZmeQVSZcbSAYES4gTYSdfZRxvZj3AcgQSjUkHXsPICok5WlxR4mlxsFG29tYunKn9WP5jzPZyH5A5i8SlAlR7gNTTGO2tkTOQ8r0PY7agScyjnc5fRT3/hSbg6Q3KtoISepGP53q/2dgncSuybDhwSOZPxo32Tu6hu6rm3cKHfRO6pxOIdWZlaUjkAATAHAdejyfz/DRg0NCWqWmOQsJ2Ub5M3/AIafKlUnoqVSueSXuvn902qdij0TAGigkqJFusqSkZgSD9EX1iorDHSLCOB1jlx7rUxvTigSEgEEqvwsNBbXxHCvql3SThq9Dr32t3ffRUTJ9xp7Dn3j4VGZV90++nkK+9RXBVUL9AVpXobXL6x2FXvH4Vo2+p/uGK/yVe6KzL0MT8rV/kqP8yBWj7/rjZ+J7UR5qSPjTjHXj1VDXNHr7QP2oA9FCv704DcFpU8vWRUHefAJwO0VvYUlASn5xIklQUApUknqpOUAZYgp5kTM9Ew/vSz/AMI/eRU7eZoL2y22r1XEIQoTqlWZKgewg0rG8jROYlTCeseL2sy/mAhvZeLXikYpwoAzOBUam59XSSDqe2o2J2slIbbSQpBAujqxzMJFiSezjbSjPBbFXhnH8IHS6SOkTCIVkJ6oJAjMMuo4p4SKGdv7t5krWhREJEkJUpSTN4SCLEzOsRPOmXgAi6zDWaFc4bFScjUCQASYJGmiTEi8G9watNpYLOW0EqBSLzAiwmJIgR1tfhQ1s+eoQkzk+jbNE8LXgRV21jgshpWZBykBajJQoglJBMmJVpJEeVLndSIsF007Kw4FlQRESBmkTJuDB07ZFpq0BQfnIuoAe6IEa6VWbVwykpbXfqkCdJJIAMi5HDhEV7s7ElZWgJyqjqEmyiMpUFG1wTr3UJ4DtlHhdTembdNkjONAIB74m1xx7aMN31htpTmvWIgm4i0c9ZN6CglvDpQVDOqYCrkjjrw1nSb1YYLEuFMlSg3qApRFvrER3a9lTZpshtcAbrRm8ekpzaCJ7h20O7X2mVBNgReDFhpqT2VXp2lmQAowM1otEjq6Xgg6dtR3DIKZGRWhAOoN+w61Gdz3Du4qeYcE2cpPVNryYsCJHDt948Yjz0mAoG/Hj2G/tpYkBJsoQBAE21OqeFk6CKp9oAgggJETySRM3OY9sd1qhGQdQpDZd7WxeVQ0zEAyIAI427PDSqpza5gnKlXaRM91qjlxCzdSsw0tIItEKHlTYbDriRKpmJTObsABKr93xmnGtFtVFXu7jmfENGU3xDSSB+0pR0tIyp9tarj2M6o1J/Cs0Y2KvAMIxTiZKH86UqspRISETMlKeqo8DB0uYINwMa9i3n8U8qcgCEAWSkqMqhPOAm+t6g4A9VWEFLJ0Lp9mjTzV5iNiNtNuOqSFLShShOiSEkiBxPbXz+s6dkfCvpHeNUYXEHkyv7hr5sJmahI0NsArXBiS15PG33WyeiJoDBLV9Z0z4JQPhRqVASToJJ/PhQr6K242eg/WWs/zrHwqy3txfRYLELmDkKR3qJSPaqlndpITNMlS5vM2+aB/+ktXP3/hSoA6EcjSonSLR/0aDkiDZYyhbioEphOYTN7m5HKhfa2Izun7JA79ZPma03ebYzOFwgV1ukQkDMk5gVnSUq0SVcqyp9uFntg/ClaKZs+aUcVKapFSM7dr/bRMsG/gffTqDYd5NMsn1vH308zqkfZ+Ip9yWhOgH83Wn+hNqcTiFfVaSn+JQP8ATRb6VtpJawWQk5nVpSALmAQpR7AAPMih70GplOKX9pI++fiKk+lDAIxGJw6VEZUNrKr6SpFjGkgg0zHlDOtsqGse91YXM30sgndneQYRXSJyAqABzyoRInQp86uWtsDFbSwz/VCszaClJ5LjMJ4GfCrDD7p7OWkDo2SoclEHxINRm92WcO/hXmkBID6UHrFU5nG8up4QfOhufESABZFifUdKZHuuSCD4WR/jtqMsYpwuKAcLCSkHVQCnc0d1p76Ft5cP0K3FdIoJdQFIOaCCFEkRxInkNddQefS0jK9hnfsOIPlIrj0gwcZgUK9VScqhzCloBFuypzP6qDFQiRrSDuCfghXZISiAoykKOWRJEqAuCAIhKr91TNmKXKswCksmbAaggJSSmTJBFuIA5CuttbKjFFtoKX0Kyk2vCglSZgaXI5dXhTuKQhNjbMSsdYwVQQmRrGU+ZpIvQHxkDrC1lZYNOcBK1ApKlAkmy5MRlJsQeXHyELGltXzaVRkNxoCNRlCjHCCSOBuKocLj5mXFqWVZkoQrKIkXOXlJnuSe++RjmHEJDb3XUQQCASqBcQrjaa62OxukHOK52s8Q0laUnqq0nmOqeJkQPMVWL2+ADmExEZlEGw1yjgTz7dKhbY28ll9TYBKY62ZFxIgwQRIywZjjVbi1sFEstJjgSSmfBJsKZYwAC64AiTZxcdT0wcjpFGwsTlMGE3jTt8KmNbWWFlpYy6ybBQtOnGJN+2h/ZKiU5kpSLjqyvQ2PGOzyopQ20YJSCpI4gEzYi4VJFpFckNhdSKkYp9KRoFK52BFo1HDvod2o0pQkAkHUki0k9vA8T2juvipGWOrI1MSQdB6w4D3VEfPSGEkG8faMaiw0kTSkTrErodbRCaMMqVXSgCxUBI4yftHh4VMwW1m2YCGi6QpKhmErSUkKAGWAlM3Ime2r1vZ7ZeScQCWUtKWUhSssgpSnqiD9L1eM3q8TvBgm8Op1plRSghBCGwkyZgQqPM86bbKE5DDmGZD+9m+Py5tDYTkLZKnUzIJgZSDyHWniJHfR56N8H0eAQYu4Ss9sqhP8oFZhvGQ8ph5looBKkEQCTYkGUEiPW863DA4UNMNNDRCUp/hAHwr62pd3J6ecto2wfuPnx+6gb5qjA4s/8Jf3a+cmzw7a+iN+z/1fiv8ALV8K+c8OdfzwqEqcwbRvn9lvfowEbOY/f/8AMXVZ6WcZlwrbXFxwE9ybn2lNWvo0TGzmO5f31Gg70sYrNimW/qNZj+8f+UUqd1Gjj6TELHmSgnLSqP8ALRXlRyuWw6aLmiX0l7dLjvyYQQ2oKJIhQVlPVtYgAgz29lCuJEpCvD3VEdJKySSSbkkyT3k1OQJbV2XqUULYY2sbwVPSR2Y5n80VY0Lq8fhTzB6x7B7gfwppk9ZXfXjCrKPOfcabISTHWt5/Jbb6DmYwbqvrPR4Bto+9Rqx3ibCMYM6QUvJ0OhgJBt+eFd+itAb2Y2VEAFS1EmwHWyi5/ZFDfpS22hxbBwzqFqQlZlJBSZKerI49WaLkLmkBULpctQ4p/F4PAsdIkjL0qCixvBjQAyLkX1p3ZmyWcMEIQokl1pVzIs4mBBmDfUUDo3twq2z06HEOk/OZUBQXaNSJjSwjSlu3jnHcRh5GVrp2whJMqCQ4MubkTFu6l8jxqU7EWSOytPA/RHXpgPXwSeBWqfNsR7TUf0iH/rLBDkE+13/apXpfT18Cf+Ioe1s/CoW/JnbGFHJLX/mrNSmOpCNQi7I/7XqfscztLagKsoLYlUxlgJEzwjXwqLvRhmOkSltJcRlEgEnP1Zzzyynx5GlgHIxe2F8A2oewj4V65s/psCqFELbQ2QBqsdE0ojtgZjHM0DKXaBLVsXVzdzR/1CG38E02lS8yUhQEhKYJGozTAAPIDWNbUKOLStWZsGEkkqKSUmABNrAWI8aucTgehUtb+ZyEyIUSAYgWFxfnHjVhuUsuKSUIQOlWpSAoAhpIA6RxX1yVqypSfqk8AAzHeypmtJNghfaLBUkuJIClRrxEXF+OnlXuyg0ohC0JbMXJOvqgiBeSST3Vs+0cAAyelLeIAvkWgCRH0VC6FRIkVje0WmEP50k5FIC259Yc5IAkgiJjSO2iXGwKk6JzdSrDDPhaT0SesiJ56xobEm3nU7B7Qz5pBGQa6FJv1SJuOU0OthSHEpKQAq5ObUEyM0RBEWnibVKbxbzSgoIzZgQSesFiVXJHGDGtdygodkUYNsG6nIKuIMp5jWLezSorBJUA2olarD1QTrpz+NebqbIVicU2OkSWwJUUq9UAc5E+B1ovxLIYDgAEpYedzDUwy03JPatbhoOTUo0FOZHWSwmHQkqzJSpK0JMHkvTzyT41y66htRbabb6KQV6kiLmwF7e+udvKSyXCVAKRg2MqZuSHFpNuUKEngL0Fr33WhOUsJKxMFRuJ8KAyN4tyVox8bG5RwR5h3A7iWUJSCkKBAAEcD5AAnwrQHOHfWG7p7yrYxLL+IT1FqKIm6UqHWcjjByiORPZW2YTGNvIDjS0rQdCkyP8AY9hpuNhDDdJ1UmZ4HIKh9I7uXZ2J7Ux5qSK+eWBr4e4VvvpUXGznZ4lI/nB+FYGxofzwFDlVvhLepfvP0X0H6Pv+7sP/AJfxNZRv7jM+OxKtQkhA/dASfaDWrbhrCdl4dR0DRJ8ComsL2i+VlSzq4sqPiSfjS7hqjYS38eWTlf5qvilU3pPs0qldW/RDmoPI1Nw6rxzEVHQKfRY1xxU4G2N1XpTC1eFScCUIT1gDI1In2cu+mcY2S6QPpDXlxqQWLeuABxtFWVKwEZispikro3mNpta9/irFnbbimQznPRiDlzHKCNCBMTN5jW+tLawccQk5yEj6KbE3+sL0Po6i8siDeRp4UQ9L83fsp4AclQPJOt1M2Nspl5pxxbqUluVKJEHKBMkc+7W3Oh/Zu1H2XQ4wkHOQsZuxXUOvV9W2ulcrxJQsWlJELT9ZJ9YH4dtS30BtagNAYF+AAAvUegZcuHHgpesSWDTw4os2tvWrE9H8ohXRrzJPqkSUm8WNraVav4s4vaWFxAEJKm0kC+UpzK8jWZYnETAHMUY7s4tbb7bgUCEkSOGtx3xQJ6djmm26bpK2SJ/MWI+KI2Ff98n7K/e5T2y9qspT0anEhfRE5Sb/APZWwkcpJm3ZUPZypZ2urmF+WZz4U9sHcMYlgOKbLasvVVNnCQFJVoTF+zjVXDfNsr+ts1hFx7v/AJCGvSc4lD6kIRkzpSZEpzK1UocCIgE8wrtog3M2Ur5I30LyW3Akyopz2JkwQRFz26Vc7xYBCnS2+0FoyIMKEizePWYJ49VJ8qG9hbTQw3qttlSiEq1LYN0SecGfGiSHKq6Gm1Lxt/lErjr7gT0WJZeCEDpQoRKryZTJFuArK97sAGsR0STIgBJEzEqGX3/m1HuD2qhKuj+Wl8r5iAkcSTcm3bHYKpMe2HFYbouticShbjhgkYdlBgZUpGYr6quZJHDSuRdvRfVcfU05oMQtTS1JMyLQo34W9s+VW+wNiYvFOJATCSqCtcBAkjQaq1+iDFpirf8AQrWIxWHwqsUohxtS+lcRC0KSM10qIhKh2/RHOjndrZ/QHCs58+Va+sfpAJWqQOU4lA/dHKmC4WukmwXcQeCgPbLRhmHm0Kj5t9GcwFH5zDtDSBrmgcJNU+8G96VLVkQAhbXQkH6gUVchBMwY5CpG+mLgNAKMqU8o9ysS5l07vZQfjdj4jKpasO6E65i0uB2yRRImAi7lKaZzTlZwXO2sU68olDyxNxYTm4SYlVoFz+FcsbSaCQ48hUXSckSlYi0EeqQQZBtMQar9mEvONtolSlmOoMx0JEDibd3GiF/czErSkHDYicylKyp5kGwIiwAAA7aYdkLcpGiUaXh2dp1QfjSrEuZpUE6JBM27tOWlFezt4nsM1kadWmE6hRBJCYmBqe00OIhM6yDF9RGsjnNO4DpHXm2mxmWtUBI1MX48BEk1LK0BRu4lFGN2287hyw8txaTB66ytSSNIk9ulCxayynW9iNDYQfKtMY9HThRK8QhKuWQqHmSJ8qCN6tmqwqsrhAtYgyFQeHmNdKRqOjdbJur3CpnxEiTsgE+a1fDvFnYAVcH5NA7CuQPvVi72oHITT2w9uOOnIuVMJSZSpRI9U5eqVjqjWBoQKstmbAVi3FDDklCQkrW5CQidZgmY1gaxSz4nB1lYYZURhjydLm/kqWK8rUP7JYDkvzV+NeVP1Z6Z9fH6T8Fk6NafD19aZIvTZMaUK10YSFiOPR/gm3cUS4lKsrYKUqEic2saGB+dK2FCsqbachWL7mP5MUwoaLBQfb/pT51s6lwkQJr65a63cqitAMhdzKy70qbHQ50buHaBfz5VBtElYIUTKUi5BEzE61ny3lNfNupU2eSwUnyVBrf/AJIjpQ9ACxMQedjI0J7daa2lvA2j9fhyUjRQTnHiIkU1FUFgsdVVz0ocbtWPbvbsHGNuPJdCA2rJZsuSSAfom2vKnN59h9E0rE9JA6QI6NSFNqFjcE2UOrqOdansre3CrBGH6NPEps2fFIFSsXtLOMrmH6ROt4WmecGb1I1zQdQhigcRusZ9HWzUYnGJ6RsraSCoiCUqIgAE6fSmOMcq3zCukQkJypA5QO4CqYbXyCEsFA5BJAHgBXC94GiOusDnzFLPqQ9105FSlrbWVjsjZrScQ+pKRlcCCpMWkZpMaQbW5g09vDvgzhISvrOHRAMGAYKp8DA4xQ4neAJSpbRUE9IASBJyhClK111T51ne2NpnELW6uVZiSJEGALW4AAUakcHEhBrWOFi7w+CM94/SQVtKQnDgyCJnMQCMsiYg3I8O2qncAl5L6VBJEg5OQiOQtATQHh38xVykVdbpbUOGxSFASlXUUOc6e23jTr6dsrS3idvFJsndGQRsN0Ub3YVvCYZRQ2lHSHJwBuDMaSYBtVFsN/584pp/rhHRFK2ykJFpCDoLgq7LzTW+e2DisQSAQ21KWwec9ZfeT7hUDZOFW+6zhk/SXysANSewC/hQI6UMjs7zRX1ZL87dgp72Mde2ow27b1koXM584gXzGwMCJtyExWo4ePlGHgeqhah3OPpy/wArYrKdpoSC430oJZWpSXIJHVkKPZIm0xIFGu423xicqgCC0020QdZSMWQdTqEpPfNBmZlGm1k1BIZLk+Px0RBu/g0QjEKAU50aMhP0ElIVI7Spar0QqeJGsGhrZGJDbGHKzA6BlF7XDSFf1VZL2s2LBQJ76TMmupR+g4tCDtl7lPM7WGMCmhh0uKcSlJOaVIKSmMsDrKJ1ow2Zh3UPl4411xJn5shOS+gMD6PCIjjNyev0iOAmoOKS2szlWlR+kgwfGLHxBqZqnHYoYpG8QqhPo0wOdS1reXmUVFJWEiSSSOokGJPOijZOzcNhk5WGktg6lIue9RufE0O4jGvsapLyPrABKx3pm/ePKo53qQZF5Goi4obqp50KMyiHuozfII9asl9I7CnHG2UoLhMwEgkkmAAI4yKs394TJLajpMTNqkbk7QC8YXHJKuiOQE6HMkG3MJJHiaNBG6Q5iLBHt0II3Ntk/sz0Y4JpkdKlZWUypRcUk5jcgBMAAXHhUjeDajbLSEMgNNBCilIASIjKDbjJ43N6v8S/0k3gTpQFvOxmUnOMwT9GdQDMEjwHZVqABqFykpwDrw4Ko/tcrt8qVUP6W7T5j8K8pbO/mmukd+n5qCVxNLA4YuqyggcydBTL6oFc7PxaQVBRg2idKhSQtkkAdslcVq5IIiY+1wWpbD3Js2s4pIKDmSOji/V1PSX9XSOJqz2xvE7h1QQjLpIXxjtFpv5VnDe8q0kQpRIiCCZnh40xtnaa323iq9gmT3nsI+kbd+lN1lBAW3abELP0eIVrn3lZcfz4I9O8ylXygeNqkM7zEf8A2p8axXMtPqrUnuJHupwPPK1eX/EfxqpFE8HRytziEVtWfNbG/jWH46XDJMcSpII7jMiq5TjbS/7vjCj/AIbiw4O28yPOspUY1Kjb6x+NRFpGoo3qTiNXfJB/qDQbhnzWq7S34Ug5FKQo/YVm+FqMsJuS27BxL5dWRZtILaQYmCucxg/szyr54YSSoAakwO+vpLZG0MYvDlOJbQi2XOhfXSqbEApynz50GSBkIGvxQ5MQmdoyzf5zWf4jFHC4M9JmSpTikqBEqFm0m37ihU3cFDjz3SttrW2ElK7JAvFipZjQXAvfQiQXt/NjPuYNxx7ENqKSlXVzStQhKRCgcqYJVAOvOpno82mlGFbazhJTMjQySSSfE68ak2ZsUJI1uUw9xq5s4ttsqveL0eYlvEOOYZlKmFkFKGyJR1RIyGLTMRNVDW72LQtC1YZ9OVxJnolKFlAyYGluNq1Z7byECVOx41XK37bFmyt1XJIJ9ulSjxKwtZQdhzjqs42Ru3iX15W2HLnrKWClAvOpEeUnso42ZuU7gA/iA8y490WRrNKG25MrKpmfo3tYHTNV3sbb777hSWegQQVKWtSTliATA1JtFAG/20sWttRhAw8hKiFDpFieqVInqg8RfWDaiiqMpDRaxS8lIGgh3DkutquPPkYbFFDaYUkBtAQiFACQUSFCwiJHZwq93T2UnDqdabSkBtLbi1A5irMziQSVwMwClACwGthWa7tFS3JzQhuFEm4jMOpqCJE3Ex4zW0YXaSFpSh1CkoKMoWhWSEkWzIBvbstyrlUSNLpmmjBYS0XP82XeByAN9IEltGFWpQUJT1WsIJIPZNYLs7ex9u5hX8pm2pGtbF6ScItrZ77jS5QW8hWI6qFuYcKtyythNvrG9YKhrMbacJ95r6OJkjesLpd9RJG+7HWRUPSLiOCB5k/Cml79Y1Wikp/PfQ4hHIU8lyIMDxEjxoraWIcEN1ZMd3KXjN4sWu6n1eFqiN7bxCc0OkFWpgE+ZFMvKk00E3ovQsGwCH08n6j8Ud7uYxS9nOpUqVfKUqzE3jolW5kAjTtq53dxqUqagku5/rRIkhQyn6OSTPCPCh7d9AGBJKozYhQjllabgz/4h8qsdiMleJYSALryweIKSD7JorSLWTTA5zGknj91oicWp4w3PR/W0LnaB9FHbqewa0+PbzEqnqpSozwOUXPcDCRzzGiHFraaQErJhXAAkr7LCyeyhrbKy8pKEjKkkWCSJA9Udwvw41IWV7G8XsNFmHyJXKlRD8hTzpUp0YUcyFcSaiYdrM4kHioe+9SsRrU3d/ZLjpccQklLKOkWfqpkAnuvM8gaFElasXdcprZ2D60kkzwqxeaSEEXCVNkdxT1k+ZCf4qbyFC4AHfPD8iuNoLMIaH0lBXcBP+3lVhVZHZcqqaISxtlMnDQeKg9FaajDh3VbYprKkiqdZqIbolXHVNvIk1Gyme6n1Lurw91cpRavrLi62a4lDzSnBKAtJUPsgjNpxitHwu5eLDyg/jXEYdCQ70gWtXVJcAKQoZSuEAkcl8azIIJkeIr6QcxDjmwW+t1lYJM9vzY99CkAsjwNDngHZZ/+melwL7JWVFAN1gAkZgUKIToeFuVCO1MQ4nD5knKCsJBggggZjChadNeFOYpC0JUSIEQYUOYtY3vFN7UxJ+RFvM3l6UKgqHSEgEWTrEG5/ClKePKDpuU7VMjY49EdFUsbdfTHXmPrX8L0SbM9ImJRZSGyOeWPdNBiE1LbTajup43bhKtqJh7xRmv0oOkEdFEiDCtRyPOh/bu9SsQnLkCe3U1TuVHioNo4mHMBqpvrJiC2+/cEY7g4pJ6RhZMLKFg9oJSqRxsoGOaRWtH1U2OkaQbW491fPLZIggkKBt+M/CtX9HGKWrDErUpcqMlRkgi0XvGXLUKtl23TuGy3cI7K03txJTgMQiTkUlMpOn6xBnzrJn7JgaqMfjWp74LT8kdFr5OWnSIn2Vl5GZZVlISLJH543rtEDk15oWLACYW5KI4IPdamnFC3fThcg3Gv541HfVJsLU4qpdKEVyk3rxbh5Xrplo1JfIvLBTsxtXBeJdI7g1hh75HhTu5+MQ0+0685kQhRlSpIEpISSEydavdxN2ztLZ/RdMGugfWfUK5S4hqNCI6yF1ef9DRUgpGNQQYuGidJ+320ANIludv9KzFQwUuUdr/a5xe+ezAorViFvK0GVpWUdgzCPM1QbV9J6BKWMKrNoS/Ay8LoQZtyzCtZ3f3ZweGQkNMtFSAApzInPKYBMxYzJ76l7U2Wy+IebYeFzDjQJHK/CDqaNqq99S9xDivmr9ML5I/m/wBdKtw/sZgf/wAHDeTn+ulUOicjevt/SVg6ta2X0KbNCcK+4tM9MrJpYoSCCP4lKHhWPJSZJHh7h7a+i9hYQ4bBssJsoJCB+2q6ldsEqUe40tALlXFf2Vhe02g284iP1ZKL/ZWUE+yqjHvFtYKQCSLSTp2UVb3YYIxmLbSIAJ9vWB7+tQhjVZsnYD8KM8WkZbkg589JKXbl1x8rphza6+KR7fxqKcYeIBmnsVppemEs8xRtVSrsY43OUXrg4w8qbWOyuIrlyvrJwPGZreNhbcLmwJBCFstqZSTAlSUpDcTYmCkRxINYGaON3G1Lw6L9UKUY7bAnvoFRJ0bLqzwmlFTOGE24qx2c3tHH5mJSpNic2VOhBAnnI5cKpd7sOWM+HcSErbUEkpGdKhGYQ4YIjl2nlRHhWFpVKCtJ5pUUnwIvVFvyhXRpUorJU51irWcp1PGlaapzuDbK4xPCmQxvka7QAWHG9+KEGgeFSEqMHuqGJFxIpwYpXZ5X9lWOyywcvSZrjJfh51ytR0mncO3xqQGYqLnK0fw7ZYGT1kkSo2mbG0yEzFz20VejF+z7dxBSvLBtIIOp428qG9k4dSyUpyAqGUZ4CJNpVmsAJmaJdzthYjC4klZaLaklJIdScxEEZROYweziaFUsAFk5hshEzXd6st+sSEYVST6y1JSJ7DmJ15JNZorGqAiBR/6UESy0rk570n8PbWcE2ocAsxHxVxdUG/ABcreJ4VyV0iK5o11WJ0vk0g+aaFdZa6CVyy3f/wCnphBw+Jck9IXEoIm2QJCkW4HMpd/wrVW8IgKzBPW53msA9Dzi0B/KshKigQCRcZpNuxQrQmNpuKUAXFxqeudOvbXsF6YZSve3MCpI/S1AIAF+yKgL2WkaJUDB9VR1OupoJTtZwMdL0i509YxM9/Ae+vV7TczJSHV9b7R0hEceZNEFHIOKG5rHaFEf9nx9fEfxqr2hT9Mvf4i/4j+NeUT1WTmherw8llODgOtzoFp+8APjX0jgUBRLh9VAyp7T9M9sQE94VXy9icR843FjnCp5XEVquO9KS8BiF4dWGLrKClKVA5VSUpUYVBBMqmqenFm3WhxSfM8tHAqo35bWNpYhGUwsJWAAZPzaBMcYhXtoA2jgVslPSJKMwlIIgxzitKHpAw7m0m9oFp1DbbOQpKQXM0OAQAYIPSC/fQX6Td6ztDFpc6JxlKWwlKHPWjMtWaOEhQ8qYcyzg7uVcKsuhMNveJv8ENYq1Ry7yrl1VcoSSQBqbDv4V8XIACmr2ev5OH56pXljwN+6QR4VAmtHxGDSrCnDjUIATyKhBF/2vfWcEUCKXPdP4hQupXNB4gHz4r2tD3Lg4RI+2qe+3wis7o03IxASy4L/AKyfNI/ChVovEmMCNqwDmCjJkHlYfnnVPv2zODzfVcSdBoZT/UKsmcTbQVzt9PSYV5IAPzaiLGZAzD3VX05yvBWnxGIuge3uWUhNNuDlXaVVwozatA7Zef2XIUSZ41NacjUeQim9pZelOT1RAFomABMd4rxoCuRlfPbwRNug2tx7MkQlspJJvJWtLYT45j/DRkhbhWpRg9G6cpgTlJzZTA+qVJ8J7KG9xdpssoWHEOqKnEKHRlEdU9UZVKCicxJsI0q8wuMbbec6VxbSlqlSHMO4D9ID1QbkKM3NKVBc55V1h7o42AXsV56Q0hWDKvqqSdOZy/1VlrggVpW+T04NY5lEnh66KzJa5r6nPVUcXbao8guCa7UwoJCyk5SSAeBIiR7R51wa1Lbu6IZ2Egm7ra0vKjSHISU9wTkvzTRwLqqDSQSssrpNc10mvgorUvRg2U4dS9M7io7kpaHvmizBuQXP8u3Zcj40N+j4EYNuePSkfxR7xVy07d3sbHtVV3Tj8Nqkdkzn/uf76vYKnPH55kfZR/TVO49GEHaXD7amPvxiGRwAT7ETTJS5KuPkY7K9qv8AlxpUNRWNbOZOIxLaB9NYHcBr5AE19DsbvsF0YhbWdwIyCSSkcyEyBmNpN9KD9hbtYVp5K22sigDfOpXZEKJHGjtlJiygffWdjcOCt3RFwu7clC2JbA202EpA+Y0i2jt6yf0iOKVtLEZtekI7gAkAeQFawsK/TKRxGH+CvxrKvSIo/pLEk8FwPBKR8KYlPZ8Eg1lg7+4oZd1rQ/Qruv8AKsWX1iWsOM3e4f1Y8Lq/dTzrO119M+hnZYY2Y3Ihbqi4vn1oyz+4E0AqQ0N1lMkE+3woH2zhejeWngTmT3G4/Dwo/wBpjK+8nk4seSjQ1vgySltwDSUk+RT/AFVV0klpC08VuPSGn6WjbMN22+BQxRvudgCGSpQKc6pTIIkACCOYJJ8qCK0LdrGBWGRxKOoezl7CKZrSRFoqDAGg1YN9QDZW+FQQbkxwqaG5CgZuIN+dvdUFl88EE1NQ9+74A1UNfYrZTtLgQVj+Qi3Kpmw2grENpIBE6HSwJ+FeY7qvOpERnVfhGYxpVlubhc2JCuCEqUe2QUj70+FaKV34RPcvPKVl6ljf3D6pnehgJUggRKTPgf8AeqtKbcPz40Vb94UBLShYAlJtxMEe40KzAiR51CjN4gSmMYAFY+wtqr3Z+xyppLmci0cNCTbt0q9ZcdgBTy1wAkSrQDQV7s5YQ2EqQF9QAZpEWFxlI9tPMJvxnsqte50jyDtdbnD6GGGJrw3Ww18l3vI3GBcK9YTB4yVJj21mtaLvao/JFAmZKfvA/D2VnRp6DsrI48b1XkPup2w8MXH20xPWk9w6x9grdd6HkO7OxKAoGMKFWPJGYe1J8qyTcfDgLW8TZIygTxVx8gfOiNrFltaiLpUClQmykqEETwtxqTp+jOoTOHYU6opHPG5vbvWZ0hXTqIURpBIr1pskgASSYA5ngPOihZu1jZbDuqIwrA//AFyr+Jc+408lyz5+yge00/hcN0I6KZ6LDpRPaMoPtBqqdd+afP2kjyCjV/CLMA7gilmi0fdbY2Dcw7QLec5ATnk3VBNtNTRGnZLAIIYbkaHIJHjFB27zqkNMqTqG0SOfVFXx271ZNidBFz48KqZcxedVF8JaLhW/6Pa/wkfwD8KVD39oFcvf+NKodG7mh5TyQ3u9C09JFlG3cLTV8hnkQe/8zUDZb2HCEpbfbsBopHu4VatoB0Uk/nspdjdFcSEA6XA70JoSRtnuw869lYntnE9I+66olSlrUqe9RIv3Vse3H+hx+JdP0MEpX8tvbFYmUn1ZjlypiQbeAVQDfN/cVI2FgenxLLJ0ccSkxyJAPsmvrDYIhCgBACrDkIFfLG6y+jxuGUTo8j2qA+NfSL20xhcO+6qxA6oPFRBCQPGgONhcpiKMyNyt3JCyveUJOMxEGB0qoi/Ez7Zqi3jH92cv9U/zJ/GphvfNJNzPE8TNQ9rT0Dqfs6dxB+FUkbrzA969DrYbUDmcmW+AQOoCi3cpzqODkQeHI0JJNEW5y4U7MXSNf2qtKsXhKxGDG1azv/wiwPTxIp9txQgEGCeXCorZBMZU+FTSrQCO7x7Kohut/LoNll+OXmdcVNytR/mNFHo9R1nla2SL9pP+kUKuDrK7z76N9wWYacVGqwPIT/VWhqRaArz3CxmrG+ZXu/TfzIJtCgR7RQMlPdR/voJZUOSUn+f/AOaAK5RezRsebaqvzARvgLtoP2U+4VKbFRdmGG0D7I9wqTmi48qScQHFb+luYGX/AEj6KNvspsMoCHFFKiJzC4ICpFjfhQGods0Yb0JztoCRBzn7pPwNCEToL03Tj8MLAY2CKxwJ2t9EWboOQysW/WePqj8DVs4apd024Q4SdVAeQn41cqoM1rkLY4D+SZcc/qgvbSPn3O/4CouHdKFpUNUkEd4uKm7cRLzkJM5teFV5RFjr7qcYOqF59U+3fbmfqtqRi+k6ZzQLbQe7MomKosY5GFeVzd9zZrljbGVopS1OZKBJXEZR+yZquxmKUrDlrLCisrJm0FMREVYDE6cC2bVXP9LqMoOQrWNliGmxyQn7oqQ8m1NbNUC02pJkFKYI42FSndKDmBNwkZGWbZQcvZSpyKVSuhZViuMZEnIFkTbMEgx2wo3r3CbPKlJSgLzEgCAE+5VE+w9gKxBJByNhWXMbknWABqY8KME7otpSA2DmBkrN1H4AdwFUMRc63ALTYg+mgJaXFzrbafMoN2pus43g31qKzlRJOZJmFJJvMlMcI8azZbZGoMc62nfjCqY2e8oqjNlQB+0sA+yayAYYq1WoirVhzBY1+jiTx1TGymyp5EcFTrGl9eGlHmL2i67AdcWsDQKWVx29bj20N7EZSFqjRIjxP+w9tXYNVVdIc2QLb+jdCzofWHDrEm3guwkjSu0uSIIkGx7tDSbeV+RTjeY6wB22pAXWjkALSHbLP8fhC2tSfqkj8D4iD41bboPpDxCoumIPHunjMede71IKXwrUKSPZYjv086hYVhClJsqSQBHMmxq+FpYrniF5mWupayzfddp8UftrRqIn88DXkXkKB502pXWkEA8LfGuluG8x41n7WXopbcLO8S3C1jktQ15E86OdyR/dzfVwn2J/ChbaTHz7ognrFXOxvpOl/KirdNmGAUnVSie0yBfyq9rHXpxbuWFwdhFeWnhdc70JJbc/y/6poE6O0+XbWh7wj5pwkXyR3TafbQSw110gpuVC1p1HDhNdoNIiiekHWqWAch9SiptuAByAHkIpwiko16mq8brfxjKwAcAq3brUskzGVSTPecv9VDLjpTa08/zxor3gSosQIgqE91yPaB7KEXWFC5INWNMCGLz/ANISDWnTgEVbvNkMJPMkzzvHwqeqvMI30baUfVSB4xf2zXajSbzmJW2w+PoqZje4IR3glLyrkBQBt3QfdVZbh7davd6GCVoUOKSPI/8AMKpkNkGVCAOf5vT8WrAvO8SjEdXI39xRlhTKEH7I9wp2uW0wkAaQPdXVUL+0V6fAPwmjuH0RHujvMGFBh+ehUeor/DUTofsEmew95rQHE2kXHA8DWNLTIg1xitp4pLYbTiH0oSIAQoxGsQFDTSrKkq7DK5ZbGcLc0mWIXBOoWv8ARnkfI0qwr5a//j4n+I/+5Sp/1gLOZH8vkf8ACMth7fXhsyQlLjarlCrXsJChcGAOelEzG/LXFt5PcpKh/NBoCpVQtmc0WC3tTg9LUPL3DU8iiLfjeRrE4VTaUOkhSVgrKIsetOW/qlVZxiXMqerxoifEoUNOqfwqQ1soIa6ySVLIUmBdVxEdWw8Tr22taSVxjJKx2N0ENNUMZHxCj7Dw/QMwSc6jmVaQLWT4fE1KK5M6HurvFrIMaWEgcDF5PE/jTSAaqpSXPJK2lDCyKnaG7WXWbjMmnUPKEEHxrhsJ4kjwrxb0aDx40PKmSMxtZVW8gC1oSZNio872B/lpxOyUpQ0+zKgDKpMwBrwGkHz4a17isNnM8e24P4VL3fxQbzt3JvCUgZptKRmtNpkax2CrakexzMiw+N0k0M3T246FTm8KCJScwNwQbX7q8fwhAKlHqjX886u9uP4ZsNBsFK1IktqScwI9bMqIPvqkVikLGRa1I4hUSjsB4jj50n6uBJlcrtmJySUZqI23O1u9Cm0mgsqWUgE+YGiR3x7jRZuvhwlhLZclZJVlEQlNrSPOqlWDEypSVdibp75IE90VNYXl9UweYF+6mKmVpHRtSOE4XM4+syEgm+nO/NSNvMJKXUFZBUgZeRuLE9tCuFbJUlwXVIMk9Yxa5PGBFEWKczGewVDRhI9VQF5hRgA8wfhUqaVo6hXcbw6Xq1LNSLacrcVOWwR3ESO6khocTTiMUhKcgUXSBcgQgHjB1NJLqZ07v96G9rQ4gK8oKmWenD3tsVXbXZ6iQZhSxMCTAkmAbTpVThcMBiEJUJCZJB0NuqbajQ0Y41hk4T5SSSW1ARmsFFRSU5B6x6s3NheKF8IM7inEkRm9liB2XOnZTN8kJKysjvXcTFhcA/RWc16F11NLKKQs7cFby4VZt1oqbzDVBnvBgK+B8KH+izQpSTEcoHtosx5T0S0m2aBp2z74qpwbSlNkZSejBBuPVHETryj/AHqwpXHLlKwfpHE0VOcDe11boRAA5ADyEUqawjgUhJBkRE6aWp2qmYdcrcUjw+BjhyCVKlFKhJhdZh9VPt/GlXlKpoPRheV7SpVEI6bxHqnw94ooa9VHcj76KVKraj9i5YH0j/PM8B91TYj1z+0fea5RSpVXe8Vr4fZN8Au1+t4io+J9Y0qVcfsmI9wmqgP/AKw/u++lSo1H7RVPpB+W81a7W/WNdx+Ncq4UqVSrO2gej35U+JXq+H5416xqKVKgt3V8OyuXdfKuRSpVA7+a77q6T8a8VSpUZvYUBsq9H6jF/wCb/SK42D+pT3q99KlTtT7FYbBf+R83fdWo0r1nWlSpRvBbw7KLtf1F9xr3ZPrOfsH7qaVKnaTtFYz0l7Q8B91xs71D3/BNSBSpUhUe1K0eD/k2eC5r2lSpZWiVKlSrqgv/2Q=="
+                            alt="Event Security"
+                            class="w-full h-full object-cover group-hover:scale-110 transition duration-500 mt-1">
+                    </div>
+                    <div class="p-8">
+                        <div
+                            class="w-14 h-14 bg-lakshya-blue text-white rounded-lg flex items-center justify-center text-2xl mb-6 shadow-lg shadow-lakshya-blue/30 group-hover:bg-lakshya-gold transition">
+                            <i class="fas fa-calendar-check"></i>
+                        </div>
+                        <h3 class="text-2xl font-bold text-lakshya-dark mb-3">Bouncer Services</h3>
+                        <p class="text-gray-600 mb-6">Staffing Vertical, prides in having successfully executed various
+                            job role requirements at the white Collar level in the sectors like, tailoring,
+                            manufacturing, services etc.</p>
+                        <a href="#"
+                            class="text-lakshya-blue font-semibold hover:text-lakshya-gold transition flex items-center">Learn
+                            More <i class="fas fa-arrow-right ml-2 text-sm"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Us Section -->
+    <section id="about-intro" class="py-24 bg-gray-50 relative overflow-hidden">
+        <!-- Background decoration -->
+        <div class="absolute top-0 right-0 w-1/3 h-full bg-lakshya-gold/5 blur-3xl -z-10 pointer-events-none"></div>
+
+        <div class="container mx-auto px-6 relative z-10">
+            <!-- Rounded Card Container -->
+            <div class="bg-white rounded-[2.5rem] shadow-xl p-8 md:p-16 border border-gray-100 flex flex-col md:flex-row items-center gap-12 md:gap-20 overflow-hidden"
+                data-aos="fade-up" data-aos-duration="1000">
+
+                <!-- Left: Content -->
+                <div class="flex-1 order-2 md:order-1" data-aos="fade-right" data-aos-delay="200">
+                    <span
+                        class="inline-block py-1 px-3 rounded-full bg-lakshya-blue/10 text-lakshya-blue text-xs font-bold tracking-wider uppercase mb-4">About
+                        Us</span>
+                    <h2 class="text-3xl md:text-5xl font-heading font-bold text-gray-900 mb-8 leading-tight">
+                        Welcome to <span class="text-lakshya-gold relative">Lakshya Security<span
+                                class="absolute bottom-1 left-0 w-full h-2 bg-lakshya-gold/20 -z-10 rounded-full"></span></span>
+                        & Facility Services
+                    </h2>
+
+                    <div class="space-y-6 text-gray-600 text-lg leading-relaxed font-light">
+                        <p>
+                            It is our pleasure to have the opportunity to share with you the details of our operating
+                            model, key benefits, and methodology that help us build trust and confidence with our
+                            clients.
+                        </p>
+                        <p>
+                            Our team is impeccably uniformed, suitably equipped, and well supervised. They are
+                            responsible for creating a safe and secure environment, reflecting our organization’s
+                            vision, commitment, and dedication to excellence.
+                        </p>
+                        <p>
+                            Our services are delivered through a motivated guard force that is well cared for and
+                            supported. We believe that investing in employee care leads to exceptional service for our
+                            clients.
+                        </p>
+                        <p class="font-medium text-lakshya-dark">
+                            We look forward to collaborating with you to support your performance objectives.
+                        </p>
+                    </div>
+
+                    <div class="mt-10 pt-8 border-t border-gray-100 flex items-center gap-5">
+                        <div class="flex-shrink-0">
+                            <!-- Placeholder or initials if image fails -->
+                            <div
+                                class="w-12 h-12 bg-lakshya-blue rounded-full flex items-center justify-center text-white font-bold text-xl">
+                                R</div>
+                        </div>
+                        <div>
+                            <p class="font-bold text-xl text-gray-900 font-heading">— Rajeev Kumar Gupta</p>
+                            <p class="text-sm text-lakshya-blue font-medium uppercase tracking-wider">Managing Director
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Right: Image -->
+                <div class="flex-1 order-1 md:order-2 flex justify-center w-full md:w-auto" data-aos="fade-left"
+                    data-aos-delay="400">
+                    <div class="relative group max-w-sm mx-auto">
+                        <!-- Glow effect behind image -->
+                        <div
+                            class="absolute inset-4 bg-lakshya-gold blur-2xl opacity-20 group-hover:opacity-40 transition-opacity duration-700 animate-pulse">
+                        </div>
+
+                        <!-- Main Image Container -->
+                        <div class="relative animate-float transition-transform duration-500 hover:scale-[1.02]">
+                            <!-- Image -->
+                            <img src="https://www.lakshyasecuritygwl.com/wp-content/uploads/2019/07/IMG-20190726-WA0751-1.jpeg"
+                                alt="Rajeev Kumar Gupta - Managing Director"
+                                class="relative rounded-3xl shadow-2xl z-10 w-full object-cover aspect-[3/4] border-4 border-white/50 backdrop-blur-sm">
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Why Choose Us -->
+    <section id="about" class="py-20 relative bg-lakshya-blue text-white overflow-hidden">
+        <!-- Background decorative pattern -->
+        <div class="absolute inset-0 opacity-10"
+            style="background-image: url('data:image/svg+xml,%3Csvg width=\'60\' height=\'60\' viewBox=\'0 0 60 60\' xmlns=\'http://www.w3.org/2000/svg\'%3E%3Cg fill=\'none\' fill-rule=\'evenodd\'%3E%3Cg fill=\'%23ffffff\' fill-opacity=\'1\'%3E%3Cpath d=\'M36 34v-4h-2v4h-4v2h4v4h2v-4h4v-2h-4zm0-30V0h-2v4h-4v2h4v4h2V6h4V4h-4zM6 34v-4H4v4H0v2h4v4h2v-4h4v-2H6zM6 4V0H4v4H0v2h4v4h2V6h4V4H6z\'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E');">
+        </div>
+
+        <div class="container mx-auto px-6 relative z-10">
+            <div class="grid md:grid-cols-2 gap-16 items-center">
+                <div data-aos="fade-right">
+                    <h2 class="text-3xl md:text-5xl font-heading font-bold mb-6">Why Choose <span
+                            class="text-lakshya-gold">Lakshya Security?</span></h2>
+                    <p class="text-gray-300 mb-8 text-lg">Leading figure in the area of private security & Allied
+                        services|</p>
+
+                    <ul class="space-y-6">
+                        <li class="flex items-start">
+                            <i class="fas fa-check-circle text-lakshya-gold text-2xl mr-4 mt-1"></i>
+                            <div>
+                                <h4 class="font-bold text-xl">24/7 Rapid Response</h4>
+                                <p class="text-gray-400 text-sm mt-1">Our control room is active round the clock to
+                                    handle emergencies.</p>
+                            </div>
+                        </li>
+                        <li class="flex items-start">
+                            <i class="fas fa-check-circle text-lakshya-gold text-2xl mr-4 mt-1"></i>
+                            <div>
+                                <h4 class="font-bold text-xl">Verified Personnel</h4>
+                                <p class="text-gray-400 text-sm mt-1">Police verification and detailed background checks
+                                    for every guard.</p>
+                            </div>
+                        </li>
+                        <li class="flex items-start">
+                            <i class="fas fa-check-circle text-lakshya-gold text-2xl mr-4 mt-1"></i>
+                            <div>
+                                <h4 class="font-bold text-xl">Customized Solutions</h4>
+                                <p class="text-gray-400 text-sm mt-1">Security plans tailored specifically to your
+                                    site's vulnerabilities.</p>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+                <div class="relative" data-aos="fade-left">
+
+                    <img src="data:image/jpeg;base64,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"
+                        alt="Security Team" class=" pl-9 h-3/5 w-3/5 object-cover rounded-lg shadow-lg">
+
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Clients Slider -->
+    <!-- CLIENTS SECTION -->
+    <section id="clients" class="py-24 bg-gray-100 overflow-hidden">
+
+        <!-- Heading -->
+        <div class="text-center mb-16">
+            <h2 class="text-4xl md:text-5xl font-bold text-gray-900">
+                Our Clients
+            </h2>
+        </div>
+
+        <!-- Swiper Container -->
+        <div class="relative flex justify-center">
+            <div class="swiper clientSwiper px-6">
+
+                <!-- Slides Wrapper -->
+                <div class="swiper-wrapper items-center">
+
+                    <!-- CARD -->
+                    <div class="swiper-slide">
+                        <div class="client-card">
+                            <div class="logo">Lewis Berger</div>
+                            <h3>Lewis Berger</h3>
+                            <p>Years Connected: <b>5</b></p>
+                            <p>Total Guards: <b>60</b></p>
+                        </div>
+                    </div>
+
+                    <div class="swiper-slide">
+                        <div class="client-card">
+                            <div class="logo">Jiwaji Club</div>
+                            <h3>Jiwaji Club</h3>
+                            <p>Years Connected: <b>12</b></p>
+                            <p>Total Guards: <b>95</b></p>
+                        </div>
+                    </div>
+
+                    <div class="swiper-slide">
+                        <div class="client-card">
+                            <div class="logo">Radisson</div>
+                            <h3>Radisson</h3>
+                            <p>Years Connected: <b>6</b></p>
+                            <p>Total Guards: <b>45</b></p>
+                        </div>
+                    </div>
+
+                    <div class="swiper-slide">
+                        <div class="client-card">
+                            <div class="logo">7i World School</div>
+                            <h3>7i World School</h3>
+                            <p>Years Connected: <b>3</b></p>
+                            <p>Total Guards: <b>30</b></p>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="client-card">
+                            <div class="logo">7i World School</div>
+                            <h3>7i World School</h3>
+                            <p>Years Connected: <b>3</b></p>
+                            <p>Total Guards: <b>30</b></p>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="client-card">
+                            <div class="logo">7i World School</div>
+                            <h3>7i World School</h3>
+                            <p>Years Connected: <b>3</b></p>
+                            <p>Total Guards: <b>30</b></p>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="client-card">
+                            <div class="logo">7i World School</div>
+                            <h3>7i World School</h3>
+                            <p>Years Connected: <b>3</b></p>
+                            <p>Total Guards: <b>30</b></p>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="client-card">
+                            <div class="logo">7i World School</div>
+                            <h3>7i World School</h3>
+                            <p>Years Connected: <b>3</b></p>
+                            <p>Total Guards: <b>30</b></p>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="client-card">
+                            <div class="logo">7i World School</div>
+                            <h3>7i World School</h3>
+                            <p>Years Connected: <b>3</b></p>
+                            <p>Total Guards: <b>30</b></p>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="client-card">
+                            <div class="logo">7i World School</div>
+                            <h3>7i World School</h3>
+                            <p>Years Connected: <b>3</b></p>
+                            <p>Total Guards: <b>30</b></p>
+                        </div>
+                    </div>
+
+                    <div class="swiper-slide">
+                        <div class="client-card">
+                            <div class="logo">Dainik Bhaskar</div>
+                            <h3>Dainik Bhaskar Group</h3>
+                            <p>Years Connected: <b>8</b></p>
+                            <p>Total Guards: <b>90</b></p>
+                        </div>
+                    </div>
+
+                </div>
+
+                <!-- Pagination -->
+                <div class="swiper-pagination mt-12"></div>
+            </div>
+        </div>
+
+        <!-- STYLES -->
+        <style>
+            .clientSwiper {
+                width: 100%;
+                height: 300px;
+                max-width: 1200px;
+                margin: auto;
+            }
+
+            .swiper-slide {
+                width: 320px;
+
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                transition: all 0.6s ease;
+                opacity: 0.35;
+                transform: scale(0.85);
+            }
+
+            .swiper-slide-active {
+                opacity: 1;
+
+                transform: scale(1.15);
+                z-index: 20;
+            }
+
+            .swiper-slide-active .client-card {
+                box-shadow: 0 40px 80px rgba(0, 0, 0, 0.18);
+                background: linear-gradient(to bottom, #fffef5, #ffffff);
+                color: #0f172a;
+            }
+
+            .client-card {
+                background: black;
+                color: white;
+                border-radius: 20px;
+                padding: 28px;
+                text-align: center;
+                border: 1px solid #eee;
+                width: 100%;
+                transition: all 0.4s ease;
+            }
+
+            .logo {
+                font-size: 28px;
+                font-weight: 700;
+                margin-bottom: 14px;
+            }
+
+            .client-card h3 {
+                font-weight: 600;
+                margin-bottom: 12px;
+            }
+
+            .client-card p {
+                font-size: 14px;
+                color: #c53b3b;
+            }
+
+            /* Hover effect */
+            .swiper-slide:hover {
+                opacity: 1;
+                transform: scale(1.2);
+                z-index: 30;
+            }
+
+            /* Pagination */
+            .swiper-pagination-bullet {
+                background: #e2e5e7;
+                width: 8px;
+                height: 8px;
+                opacity: 1;
+            }
+
+            .swiper-pagination-bullet-active {
+                width: 22px;
+                border-radius: 5px;
+                background: #0f172a;
+            }
+        </style>
+
+        <!-- SWIPER JS -->
+
+
+    </section>
+
+
+    <!-- Swiper Init -->
+
+    </section>
+
+
+
+    <!-- GALLERY SECTION -->
+    <section id="gallery" class="py-05 bg-gradient-to-b from-pink-200 to-slate-900 relative overflow-hidden select-none">
+
+        <!-- Header -->
+        <div class="container mx-auto px-6 mb-16 text-center relative z-10" data-aos="fade-up">
+            <h2 class="text-4xl md:text-5xl font-heading font-bold text-black-100 drop-shadow-lg tracking-tight">Gallery
+            </h2>
+            <div class="h-1 w-20 bg-gray-700 mx-auto mt-6 rounded-full opacity-50"></div>
+        </div>
+
+        <!-- Gallery Container -->
+        <div class="relative w-full max-w-[1400px] mx-auto" data-aos="zoom-in" data-aos-duration="1000">
+
+            <!-- Glow Effect -->
+            <div
+                class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[60%] h-[60%] bg-blue-900/10 blur-[100px] rounded-full pointer-events-none">
+            </div>
+
+            <!-- Carousel Wrapper -->
+            <!-- Aspect Ratio Adjusted for visibility -->
+            <div class="relative w-full h-[400px] md:h-[500px] flex items-center justify-center perspective-1000">
+
+                <!-- Inner Track -->
+                <div id="gallery-track"
+                    class="relative w-full h-full flex items-center justify-center transform-style-3d transition-transform duration-700 ease-out">
+                    <!-- Slides injected by JS -->
+                </div>
+
+            </div>
+
+            <!-- Navigation Buttons -->
+            <button id="gallery-prev"
+                class="absolute top-1/2 -translate-y-1/2 left-4 md:left-8 w-14 h-14 rounded-full bg-black/40 border border-white/10 text-white backdrop-blur-md flex items-center justify-center cursor-pointer hover:bg-white/10 hover:border-white/30 hover:scale-110 transition-all duration-300 z-50 group shadow-2xl">
+                <i class="fas fa-chevron-left text-lg group-hover:-translate-x-1 transition-transform"></i>
+            </button>
+
+            <button id="gallery-next"
+                class="absolute top-1/2 -translate-y-1/2 right-4 md:right-8 w-14 h-14 rounded-full bg-black/40 border border-white/10 text-white backdrop-blur-md flex items-center justify-center cursor-pointer hover:bg-white/10 hover:border-white/30 hover:scale-110 transition-all duration-300 z-50 group shadow-2xl">
+                <i class="fas fa-chevron-right text-lg group-hover:translate-x-1 transition-transform"></i>
+            </button>
+
+        </div>
+
+        <!-- Custom Gallery Logic (Self Contained) -->
+        <script>
+            (function () {
+                const track = document.getElementById('gallery-track');
+                const prevBtn = document.getElementById('gallery-prev');
+                const nextBtn = document.getElementById('gallery-next');
+
+                // Generated Placeholder Data (Gradients to simulate dark moody images)
+                const items = [
+                    { color: 'linear-gradient(135deg, #0f172a, #334155)', title: 'Security Operations' }, // Dark Blue/Slate
+                    { color: 'linear-gradient(135deg, #171717, #404040)', title: 'Control Room' }, // Neutral Dark
+                    { color: 'linear-gradient(135deg, #312e81, #4c1d95)', title: 'Elite Training' }, // Indigo/Purple
+                    { color: 'linear-gradient(135deg, #020617, #1e293b)', title: 'Night Patrol' }, // Midnight
+                    { color: 'linear-gradient(135deg, #111827, #374151)', title: 'Events Security' }, // Gray
+                ];
+
+                let activeIndex = 2; // Start center
+                let isDragging = false;
+                let startPos = 0;
+                let currentTranslate = 0;
+
+                // Create Slides
+                items.forEach((item, index) => {
+                    const slide = document.createElement('div');
+                    slide.className = 'gallery-slide absolute transition-all duration-700 ease-out shadow-2xl rounded-2xl overflow-hidden border border-white/10';
+                    slide.style.width = '60%'; // Base width (adjusts via scale)
+                    slide.style.maxWidth = '800px';
+                    slide.style.height = '60%'; // Base height
+                    slide.style.maxHeight = '450px';
+                    slide.style.background = item.color;
+                    slide.style.display = 'flex';
+                    slide.style.alignItems = 'center';
+                    slide.style.justifyContent = 'center';
+
+                    // Inner Content
+                    slide.innerHTML = `
+                        <div class="text-center opacity-0 transition-opacity duration-500 delay-200 slide-content">
+                            <i class="fas fa-shield-alt text-4xl text-white/20 mb-4"></i>
+                            <h3 class="text-2xl font-bold text-white/80 font-heading">${item.title}</h3>
+                        </div>
+                    `;
+
+                    track.appendChild(slide);
+                });
+
+                const slides = Array.from(document.querySelectorAll('.gallery-slide'));
+
+                function updateGallery() {
+                    const center = window.innerWidth / 2;
+
+                    slides.forEach((slide, index) => {
+                        // Calculate distance from active index
+                        let offset = index - activeIndex;
+
+                        // Handle infinite-like loop visually (optional, keeping it simple bounded for now)
+                        // Simple Bounded Logic:
+
+                        // Styling based on offset
+                        if (offset === 0) {
+                            // Center Item
+                            slide.style.transform = 'translateX(0) scale(1.0)';
+                            slide.style.zIndex = '30';
+                            slide.style.opacity = '1';
+                            slide.style.filter = 'blur(0px)';
+                            slide.style.height = '1000px'; // Max height logic handled by max-height css
+                            slide.style.width = '60%';
+                            slide.querySelector('.slide-content').style.opacity = '1';
+                            slide.style.border = '1px solid rgba(255,255,255,0.2)';
+                            slide.style.boxShadow = '0 25px 50px -12px rgba(0, 0, 0, 0.5)';
+                        } else if (Math.abs(offset) === 1) {
+                            // Immediate Neighbors
+                            const direction = offset > 0 ? '50%' : '-50%';
+                            slide.style.transform = `translateX(${direction}) scale(0.85)`;
+                            slide.style.zIndex = '20';
+                            slide.style.opacity = '0.6';
+                            slide.style.filter = 'blur(1px)';
+                            slide.querySelector('.slide-content').style.opacity = '0';
+                            slide.style.border = '1px solid rgba(255,255,255,0.05)';
+                        } else {
+                            // Far items
+                            const direction = offset > 0 ? '100%' : '-100%';
+                            slide.style.transform = `translateX(${direction}) scale(0.7)`;
+                            slide.style.zIndex = '10';
+                            slide.style.opacity = '0';
+                        }
+                    });
+                }
+
+                // Initial Update
+                // Need a small timeout to ensure DOM is ready? No, strict script exec is fine.
+                // However, style.height needs to be better controlled.
+                // Let's us CSS classes for size control in update.
+                const styleSlides = () => {
+                    slides.forEach((slide) => {
+                        slide.style.top = '50%';
+                        slide.style.left = '50%';
+                        slide.style.marginTop = `-${slide.offsetHeight / 2}px`; // Center vertically
+                        slide.style.marginLeft = `-${slide.offsetWidth / 2}px`; // Center horizontally
+                        // Actually better to use translate(-50%, -50%) BUT we are using translateX for carousel.
+                        // So we set left: 50% and use calc in transform.
+                        // Let's refine the transform logic.
+                    });
+                };
+
+                // Better Transform Logic
+                function render() {
+                    slides.forEach((slide, index) => {
+                        const offset = index - activeIndex;
+                        const absOffset = Math.abs(offset);
+
+                        // Base CSS
+                        slide.style.left = '50%';
+                        slide.style.top = '50%';
+
+                        if (offset === 0) {
+                            slide.style.transform = 'translate(-50%, -50%) scale(1)';
+                            slide.style.zIndex = 20;
+                            slide.style.opacity = 1;
+                            slide.style.filter = 'none';
+                        } else {
+                            // 60% transition for neighbors
+                            const xOffset = offset * 60;
+                            slide.style.transform = `translate(calc(-50% + ${xOffset}%), -50%) scale(${1 - (absOffset * 0.15)})`;
+                            slide.style.zIndex = 20 - absOffset;
+                            slide.style.opacity = 1 - (absOffset * 0.4);
+                            slide.style.filter = `blur(${absOffset * 2}px)`;
+                        }
+                    });
+                }
+
+                prevBtn.addEventListener('click', () => {
+                    if (activeIndex > 0) {
+                        activeIndex--;
+                        render();
+                    }
+                });
+
+                nextBtn.addEventListener('click', () => {
+                    if (activeIndex < items.length - 1) {
+                        activeIndex++;
+                        render();
+                    }
+                });
+
+                // Touch support
+                let touchStartX = 0;
+                let touchEndX = 0;
+
+                track.addEventListener('touchstart', (e) => {
+                    touchStartX = e.changedTouches[0].screenX;
+                }, { passive: true });
+
+                track.addEventListener('touchend', (e) => {
+                    touchEndX = e.changedTouches[0].screenX;
+                    handleSwipe();
+                }, { passive: true });
+
+                function handleSwipe() {
+                    if (touchEndX < touchStartX - 50) {
+                        if (activeIndex < items.length - 1) {
+                            activeIndex++;
+                            render();
+                        }
+                    }
+                    if (touchEndX > touchStartX + 50) {
+                        if (activeIndex > 0) {
+                            activeIndex--;
+                            render();
+                        }
+                    }
+                }
+
+                // Initial Render
+                render();
+            })();
+        </script>
+    </section>
+
+    <!-- Footer -->
+    <footer id="contact" class="bg-gray-900 text-white pt-20 pb-10">
+        <div class="container mx-auto px-6">
+            <div class="grid md:grid-cols-4 gap-12 mb-16">
+                <!-- Brand -->
+                <div class="col-span-1 md:col-span-2">
+                    <a href="#" class="text-3xl font-heading font-bold text-white mb-6 block">
+                        LAKSHYA <span class="text-lakshya-gold">SECURITY</span>
+                    </a>
+                    <p class="text-gray-400 mb-8 max-w-sm">Providing top-tier security solutions with unwavering
+                        commitment and professionalism. Your safety is our mission.</p>
+                    <div class="flex space-x-4">
+                        <a href="#"
+                            class="w-10 h-10 rounded-full bg-gray-800 flex items-center justify-center hover:bg-lakshya-gold hover:text-lakshya-dark transition"><i
+                                class="fab fa-facebook-f"></i></a>
+                        <a href="#"
+                            class="w-10 h-10 rounded-full bg-gray-800 flex items-center justify-center hover:bg-lakshya-gold hover:text-lakshya-dark transition"><i
+                                class="fab fa-twitter"></i></a>
+                        <a href="#"
+                            class="w-10 h-10 rounded-full bg-gray-800 flex items-center justify-center hover:bg-lakshya-gold hover:text-lakshya-dark transition"><i
+                                class="fab fa-linkedin-in"></i></a>
+                        <a href="#"
+                            class="w-10 h-10 rounded-full bg-gray-800 flex items-center justify-center hover:bg-lakshya-gold hover:text-lakshya-dark transition"><i
+                                class="fab fa-instagram"></i></a>
+                    </div>
+                </div>
+
+                <!-- Quick Links -->
+                <div>
+                    <h4 class="text-xl font-bold mb-6 text-white">Quick Links</h4>
+                    <ul class="space-y-3">
+                        <li><a href="#" class="text-gray-400 hover:text-lakshya-gold transition">Home</a></li>
+                        <li><a href="#services" class="text-gray-400 hover:text-lakshya-gold transition">Our
+                                Services</a></li>
+                        <li><a href="#about" class="text-gray-400 hover:text-lakshya-gold transition">About Us</a></li>
+                        <li><a href="#clients" class="text-gray-400 hover:text-lakshya-gold transition">Clients</a></li>
+                        <li><a href="#contact" class="text-gray-400 hover:text-lakshya-gold transition">Contact</a></li>
+                    </ul>
+                </div>
+
+                <!-- Contact -->
+                <div>
+                    <h4 class="text-xl font-bold mb-6 text-white">Contact Us</h4>
+                    <ul class="space-y-4">
+                        <li class="flex items-start">
+                            <i class="fas fa-map-marker-alt text-lakshya-gold mt-1.5 mr-3"></i>
+                            <span class="text-gray-400">123 Business Park, Sec-62,<br>Noida, UP - 201301</span>
+                        </li>
+                        <li class="flex items-center">
+                            <i class="fas fa-phone-alt text-lakshya-gold mr-3"></i>
+                            <a href="tel:+911234567890" class="text-gray-400 hover:text-lakshya-gold transition">+91 123
+                                456 7890</a>
+                        </li>
+                        <li class="flex items-center">
+                            <i class="fas fa-envelope text-lakshya-gold mr-3"></i>
+                            <a href="mailto:info@lakshyasecurity.com"
+                                class="text-gray-400 hover:text-lakshya-gold transition">info@lakshyasecurity.com</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Map -->
+            <div
+                class="w-full h-64 bg-gray-800 rounded-xl overflow-hidden mb-12 grayscale hover:grayscale-0 transition duration-500">
+                <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3502.569302636904!2d77.36398231508218!3d28.62778898241973!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390ce5545305141b%3A0xe5e5d4e783c48002!2sNoida%2C%20Uttar%20Pradesh!5e0!3m2!1sen!2sin!4v1652174362145!5m2!1sen!2sin"
+                    width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+            </div>
+
+            <div class="border-t border-gray-800 pt-8 flex flex-col md:flex-row justify-between items-center">
+                <p class="text-gray-500 text-sm text-center md:text-left mb-4 md:mb-0">&copy; 2024 Lakshya Security
+                    Services. All rights reserved.</p>
+                <div class="flex space-x-6 text-sm text-gray-500">
+                    <a href="#" class="hover:text-white transition">Privacy Policy</a>
+                    <a href="#" class="hover:text-white transition">Terms of Service</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+
+    <!-- JS Scripts -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <script src="./src/js/main.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+    <script>
+        new Swiper(".clientSwiper", {
+            slidesPerView: "auto",
+            centeredSlides: true,
+            loop: true,
+            spaceBetween: 40,
+            speed: 8000,
+            autoplay: {
+                delay: 3000,
+                pauseOnMouseEnter: true,
+                disableOnInteraction: false,
+            },
+            pagination: {
+                el: ".swiper-pagination",
+                clickable: true,
+            },
+        });
+    </script>
+</body>
+
+</html>
