@@ -225,7 +225,7 @@ bg-gray-900 px-4 md:px-10 lg:px-16 rounded-10xl" >
 
                         <div class="flex flex-col sm:flex-row gap-4">
                             <a href="tel:+911234567890"
-                                class="px-8 py-4 bg-lakshya-gold text-black rounded-xl font-bold shadow-lg hover:-translate-y-1 transition">
+                                class="px-8 py-4 bg-yellow-500 text-black rounded-xl font-bold shadow-lg hover:-translate-y-1 transition">
                                 📞 Get Immediate Security
                             </a>
 
@@ -511,7 +511,8 @@ bg-gray-900 px-4 md:px-10 lg:px-16 rounded-10xl" >
     </section>
 
     <!-- Why Choose Us -->
-    <section id="about" class="py-20 relative bg-lakshya-blue text-white overflow-hidden">
+    <section id="about" class="py-20 relative bg-black
+     text-white overflow-hidden">
         <!-- Background decorative pattern -->
         <div class="absolute inset-0 opacity-10"
             style="background-image: url('data:image/svg+xml,%3Csvg width=\'60\' height=\'60\' viewBox=\'0 0 60 60\' xmlns=\'http://www.w3.org/2000/svg\'%3E%3Cg fill=\'none\' fill-rule=\'evenodd\'%3E%3Cg fill=\'%23ffffff\' fill-opacity=\'1\'%3E%3Cpath d=\'M36 34v-4h-2v4h-4v2h4v4h2v-4h4v-2h-4zm0-30V0h-2v4h-4v2h4v4h2V6h4V4h-4zM6 34v-4H4v4H0v2h4v4h2v-4h4v-2H6zM6 4V0H4v4H0v2h4v4h2V6h4V4H6z\'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E');">
@@ -521,13 +522,13 @@ bg-gray-900 px-4 md:px-10 lg:px-16 rounded-10xl" >
             <div class="grid md:grid-cols-2 gap-16 items-center">
                 <div data-aos="fade-right">
                     <h2 class="text-3xl md:text-5xl font-heading font-bold mb-6">Why Choose <span
-                            class="text-lakshya-gold">Lakshya Security?</span></h2>
+                            class="text-yellow-500">Lakshya Security?</span></h2>
                     <p class="text-gray-300 mb-8 text-lg">Leading figure in the area of private security & Allied
                         services|</p>
 
                     <ul class="space-y-6">
                         <li class="flex items-start">
-                            <i class="fas fa-check-circle text-lakshya-gold text-2xl mr-4 mt-1"></i>
+                            <i class="fas fa-check-circle text-yellow-500 text-2xl mr-4 mt-1"></i>
                             <div>
                                 <h4 class="font-bold text-xl">24/7 Rapid Response</h4>
                                 <p class="text-gray-400 text-sm mt-1">Our control room is active round the clock to
@@ -535,7 +536,7 @@ bg-gray-900 px-4 md:px-10 lg:px-16 rounded-10xl" >
                             </div>
                         </li>
                         <li class="flex items-start">
-                            <i class="fas fa-check-circle text-lakshya-gold text-2xl mr-4 mt-1"></i>
+                            <i class="fas fa-check-circle text-yellow-500 text-2xl mr-4 mt-1"></i>
                             <div>
                                 <h4 class="font-bold text-xl">Verified Personnel</h4>
                                 <p class="text-gray-400 text-sm mt-1">Police verification and detailed background checks
@@ -543,7 +544,7 @@ bg-gray-900 px-4 md:px-10 lg:px-16 rounded-10xl" >
                             </div>
                         </li>
                         <li class="flex items-start">
-                            <i class="fas fa-check-circle text-lakshya-gold text-2xl mr-4 mt-1"></i>
+                            <i class="fas fa-check-circle text-yellow-500 text-2xl mr-4 mt-1"></i>
                             <div>
                                 <h4 class="font-bold text-xl">Customized Solutions</h4>
                                 <p class="text-gray-400 text-sm mt-1">Security plans tailored specifically to your
@@ -761,6 +762,15 @@ bg-gray-900 px-4 md:px-10 lg:px-16 rounded-10xl" >
                 border-radius: 5px;
                 background: #0f172a;
             }
+            #slider::-webkit-scrollbar {
+  display: none;
+}
+
+/* Hide scrollbar for IE, Edge */
+#slider {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
         </style>
 
         <!-- SWIPER JS -->
@@ -771,230 +781,59 @@ bg-gray-900 px-4 md:px-10 lg:px-16 rounded-10xl" >
 
     <!-- Swiper Init -->
 
-    </section>
+    <section class="py-20 bg-black">
+  <div class="max-w-7xl mx-auto px-6">
 
+    <h2 class="text-4xl font-bold text-center text-white mb-12">
+      Our Gallery
+    </h2>
 
+    <div class="relative">
 
-    <!-- GALLERY SECTION -->
-    <section id="gallery" class="py-05 bg-gradient-to-b from-pink-200 to-slate-900 relative overflow-hidden select-none">
+      <!-- Left Button -->
+      <button id="prevBtn"
+        class="absolute left-0 top-1/2 -translate-y-1/2 bg-white/20 hover:bg-white/40 text-white p-3 rounded-full z-10">
+        &#10094;
+      </button>
 
-        <!-- Header -->
-        <div class="container mx-auto px-6 mb-16 text-center relative z-10" data-aos="fade-up">
-            <h2 class="text-4xl md:text-5xl font-heading font-bold text-black-100 drop-shadow-lg tracking-tight">Gallery
-            </h2>
-            <div class="h-1 w-20 bg-gray-700 mx-auto mt-6 rounded-full opacity-50"></div>
+      <!-- Slider -->
+      <div id="slider"
+        class="flex overflow-x-auto scroll-smooth space-x-6 px-12">
+
+        <div class="flex-shrink-0 w-80 rounded-2xl overflow-hidden shadow-xl">
+          <img src="src/img/lak1.webp" class="w-full h-64 object-cover">
         </div>
 
-        <!-- Gallery Container -->
-        <div class="relative w-full max-w-[1400px] mx-auto" data-aos="zoom-in" data-aos-duration="1000">
-
-            <!-- Glow Effect -->
-            <div
-                class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[60%] h-[60%] bg-blue-900/10 blur-[100px] rounded-full pointer-events-none">
-            </div>
-
-            <!-- Carousel Wrapper -->
-            <!-- Aspect Ratio Adjusted for visibility -->
-            <div class="relative w-full h-[400px] md:h-[500px] flex items-center justify-center perspective-1000">
-
-                <!-- Inner Track -->
-                <div id="gallery-track"
-                    class="relative w-full h-full flex items-center justify-center transform-style-3d transition-transform duration-700 ease-out">
-                    <!-- Slides injected by JS -->
-                </div>
-
-            </div>
-
-            <!-- Navigation Buttons -->
-            <button id="gallery-prev"
-                class="absolute top-1/2 -translate-y-1/2 left-4 md:left-8 w-14 h-14 rounded-full bg-black/40 border border-white/10 text-white backdrop-blur-md flex items-center justify-center cursor-pointer hover:bg-white/10 hover:border-white/30 hover:scale-110 transition-all duration-300 z-50 group shadow-2xl">
-                <i class="fas fa-chevron-left text-lg group-hover:-translate-x-1 transition-transform"></i>
-            </button>
-
-            <button id="gallery-next"
-                class="absolute top-1/2 -translate-y-1/2 right-4 md:right-8 w-14 h-14 rounded-full bg-black/40 border border-white/10 text-white backdrop-blur-md flex items-center justify-center cursor-pointer hover:bg-white/10 hover:border-white/30 hover:scale-110 transition-all duration-300 z-50 group shadow-2xl">
-                <i class="fas fa-chevron-right text-lg group-hover:translate-x-1 transition-transform"></i>
-            </button>
-
+        <div class="flex-shrink-0 w-80 rounded-2xl overflow-hidden shadow-xl">
+          <img src="src/img/lak2.webp" class="w-full h-64 object-cover">
         </div>
 
-        <!-- Custom Gallery Logic (Self Contained) -->
-        <script>
-            (function () {
-                const track = document.getElementById('gallery-track');
-                const prevBtn = document.getElementById('gallery-prev');
-                const nextBtn = document.getElementById('gallery-next');
+        <div class="flex-shrink-0 w-80 rounded-2xl overflow-hidden shadow-xl">
+          <img src="src/img/lak5.jfif" class="w-full h-64 object-cover">
+        </div>
 
-                // Generated Placeholder Data (Gradients to simulate dark moody images)
-                const items = [
-                    { color: 'linear-gradient(135deg, #0f172a, #334155)', title: 'Security Operations' }, // Dark Blue/Slate
-                    { color: 'linear-gradient(135deg, #171717, #404040)', title: 'Control Room' }, // Neutral Dark
-                    { color: 'linear-gradient(135deg, #312e81, #4c1d95)', title: 'Elite Training' }, // Indigo/Purple
-                    { color: 'linear-gradient(135deg, #020617, #1e293b)', title: 'Night Patrol' }, // Midnight
-                    { color: 'linear-gradient(135deg, #111827, #374151)', title: 'Events Security' }, // Gray
-                ];
+        <div class="flex-shrink-0 w-80 rounded-2xl overflow-hidden shadow-xl">
+          <img src="src/img/lak6.jfif" class="w-full h-64 object-cover">
+        </div>
 
-                let activeIndex = 2; // Start center
-                let isDragging = false;
-                let startPos = 0;
-                let currentTranslate = 0;
+        <div class="flex-shrink-0 w-80 rounded-2xl overflow-hidden shadow-xl">
+          <img src="src/img/lak4.jpg" class="w-full h-64 object-cover">
+        </div>
 
-                // Create Slides
-                items.forEach((item, index) => {
-                    const slide = document.createElement('div');
-                    slide.className = 'gallery-slide absolute transition-all duration-700 ease-out shadow-2xl rounded-2xl overflow-hidden border border-white/10';
-                    slide.style.width = '60%'; // Base width (adjusts via scale)
-                    slide.style.maxWidth = '800px';
-                    slide.style.height = '60%'; // Base height
-                    slide.style.maxHeight = '450px';
-                    slide.style.background = item.color;
-                    slide.style.display = 'flex';
-                    slide.style.alignItems = 'center';
-                    slide.style.justifyContent = 'center';
+      </div>
 
-                    // Inner Content
-                    slide.innerHTML = `
-                        <div class="text-center opacity-0 transition-opacity duration-500 delay-200 slide-content">
-                            <i class="fas fa-shield-alt text-4xl text-white/20 mb-4"></i>
-                            <h3 class="text-2xl font-bold text-white/80 font-heading">${item.title}</h3>
-                        </div>
-                    `;
+      <!-- Right Button -->
+      <button id="nextBtn"
+        class="absolute right-0 top-1/2 -translate-y-1/2 bg-white/20 hover:bg-white/40 text-white p-3 rounded-full z-10">
+        &#10095;
+      </button>
 
-                    track.appendChild(slide);
-                });
+    </div>
+  </div>
+</section>
 
-                const slides = Array.from(document.querySelectorAll('.gallery-slide'));
 
-                function updateGallery() {
-                    const center = window.innerWidth / 2;
 
-                    slides.forEach((slide, index) => {
-                        // Calculate distance from active index
-                        let offset = index - activeIndex;
-
-                        // Handle infinite-like loop visually (optional, keeping it simple bounded for now)
-                        // Simple Bounded Logic:
-
-                        // Styling based on offset
-                        if (offset === 0) {
-                            // Center Item
-                            slide.style.transform = 'translateX(0) scale(1.0)';
-                            slide.style.zIndex = '30';
-                            slide.style.opacity = '1';
-                            slide.style.filter = 'blur(0px)';
-                            slide.style.height = '1000px'; // Max height logic handled by max-height css
-                            slide.style.width = '60%';
-                            slide.querySelector('.slide-content').style.opacity = '1';
-                            slide.style.border = '1px solid rgba(255,255,255,0.2)';
-                            slide.style.boxShadow = '0 25px 50px -12px rgba(0, 0, 0, 0.5)';
-                        } else if (Math.abs(offset) === 1) {
-                            // Immediate Neighbors
-                            const direction = offset > 0 ? '50%' : '-50%';
-                            slide.style.transform = `translateX(${direction}) scale(0.85)`;
-                            slide.style.zIndex = '20';
-                            slide.style.opacity = '0.6';
-                            slide.style.filter = 'blur(1px)';
-                            slide.querySelector('.slide-content').style.opacity = '0';
-                            slide.style.border = '1px solid rgba(255,255,255,0.05)';
-                        } else {
-                            // Far items
-                            const direction = offset > 0 ? '100%' : '-100%';
-                            slide.style.transform = `translateX(${direction}) scale(0.7)`;
-                            slide.style.zIndex = '10';
-                            slide.style.opacity = '0';
-                        }
-                    });
-                }
-
-                // Initial Update
-                // Need a small timeout to ensure DOM is ready? No, strict script exec is fine.
-                // However, style.height needs to be better controlled.
-                // Let's us CSS classes for size control in update.
-                const styleSlides = () => {
-                    slides.forEach((slide) => {
-                        slide.style.top = '50%';
-                        slide.style.left = '50%';
-                        slide.style.marginTop = `-${slide.offsetHeight / 2}px`; // Center vertically
-                        slide.style.marginLeft = `-${slide.offsetWidth / 2}px`; // Center horizontally
-                        // Actually better to use translate(-50%, -50%) BUT we are using translateX for carousel.
-                        // So we set left: 50% and use calc in transform.
-                        // Let's refine the transform logic.
-                    });
-                };
-
-                // Better Transform Logic
-                function render() {
-                    slides.forEach((slide, index) => {
-                        const offset = index - activeIndex;
-                        const absOffset = Math.abs(offset);
-
-                        // Base CSS
-                        slide.style.left = '50%';
-                        slide.style.top = '50%';
-
-                        if (offset === 0) {
-                            slide.style.transform = 'translate(-50%, -50%) scale(1)';
-                            slide.style.zIndex = 20;
-                            slide.style.opacity = 1;
-                            slide.style.filter = 'none';
-                        } else {
-                            // 60% transition for neighbors
-                            const xOffset = offset * 60;
-                            slide.style.transform = `translate(calc(-50% + ${xOffset}%), -50%) scale(${1 - (absOffset * 0.15)})`;
-                            slide.style.zIndex = 20 - absOffset;
-                            slide.style.opacity = 1 - (absOffset * 0.4);
-                            slide.style.filter = `blur(${absOffset * 2}px)`;
-                        }
-                    });
-                }
-
-                prevBtn.addEventListener('click', () => {
-                    if (activeIndex > 0) {
-                        activeIndex--;
-                        render();
-                    }
-                });
-
-                nextBtn.addEventListener('click', () => {
-                    if (activeIndex < items.length - 1) {
-                        activeIndex++;
-                        render();
-                    }
-                });
-
-                // Touch support
-                let touchStartX = 0;
-                let touchEndX = 0;
-
-                track.addEventListener('touchstart', (e) => {
-                    touchStartX = e.changedTouches[0].screenX;
-                }, { passive: true });
-
-                track.addEventListener('touchend', (e) => {
-                    touchEndX = e.changedTouches[0].screenX;
-                    handleSwipe();
-                }, { passive: true });
-
-                function handleSwipe() {
-                    if (touchEndX < touchStartX - 50) {
-                        if (activeIndex < items.length - 1) {
-                            activeIndex++;
-                            render();
-                        }
-                    }
-                    if (touchEndX > touchStartX + 50) {
-                        if (activeIndex > 0) {
-                            activeIndex--;
-                            render();
-                        }
-                    }
-                }
-
-                // Initial Render
-                render();
-            })();
-        </script>
-    </section>
 
     <!-- Footer -->
     <footer id="contact" class="bg-gray-900 text-white pt-20 pb-10">
@@ -1003,22 +842,23 @@ bg-gray-900 px-4 md:px-10 lg:px-16 rounded-10xl" >
                 <!-- Brand -->
                 <div class="col-span-1 md:col-span-2">
                     <a href="#" class="text-3xl font-heading font-bold text-white mb-6 block">
-                        LAKSHYA <span class="text-lakshya-gold">SECURITY</span>
+                        LAKSHYA <span class="text-yellow-500
+                        ">SECURITY</span>
                     </a>
                     <p class="text-gray-400 mb-8 max-w-sm">Providing top-tier security solutions with unwavering
                         commitment and professionalism. Your safety is our mission.</p>
                     <div class="flex space-x-4">
                         <a href="#"
-                            class="w-10 h-10 rounded-full bg-gray-800 flex items-center justify-center hover:bg-lakshya-gold hover:text-lakshya-dark transition"><i
+                            class="w-10 h-10 rounded-full bg-gray-800 flex items-center justify-center hover:bg-yellow-500 hover:text-black transition"><i
                                 class="fab fa-facebook-f"></i></a>
                         <a href="#"
-                            class="w-10 h-10 rounded-full bg-gray-800 flex items-center justify-center hover:bg-lakshya-gold hover:text-lakshya-dark transition"><i
+                            class="w-10 h-10 rounded-full bg-gray-800 flex items-center justify-center hover:bg-yellow-500 hover:text-black transition"><i
                                 class="fab fa-twitter"></i></a>
                         <a href="#"
-                            class="w-10 h-10 rounded-full bg-gray-800 flex items-center justify-center hover:bg-lakshya-gold hover:text-lakshya-dark transition"><i
+                            class="w-10 h-10 rounded-full bg-gray-800 flex items-center justify-center hover:bg-yellow-500 hover:text-black transition"><i
                                 class="fab fa-linkedin-in"></i></a>
                         <a href="#"
-                            class="w-10 h-10 rounded-full bg-gray-800 flex items-center justify-center hover:bg-lakshya-gold hover:text-lakshya-dark transition"><i
+                            class="w-10 h-10 rounded-full bg-gray-800 flex items-center justify-center hover:bg-yellow-500 hover:text-black transition"><i
                                 class="fab fa-instagram"></i></a>
                     </div>
                 </div>
@@ -1027,12 +867,12 @@ bg-gray-900 px-4 md:px-10 lg:px-16 rounded-10xl" >
                 <div>
                     <h4 class="text-xl font-bold mb-6 text-white">Quick Links</h4>
                     <ul class="space-y-3">
-                        <li><a href="#" class="text-gray-400 hover:text-lakshya-gold transition">Home</a></li>
-                        <li><a href="#services" class="text-gray-400 hover:text-lakshya-gold transition">Our
+                        <li><a href="#" class="text-gray-400 hover:text-yellow-500 transition">Home</a></li>
+                        <li><a href="#services" class="text-gray-400 hover:text-yellow-500 transition">Our
                                 Services</a></li>
-                        <li><a href="#about" class="text-gray-400 hover:text-lakshya-gold transition">About Us</a></li>
-                        <li><a href="#clients" class="text-gray-400 hover:text-lakshya-gold transition">Clients</a></li>
-                        <li><a href="#contact" class="text-gray-400 hover:text-lakshya-gold transition">Contact</a></li>
+                        <li><a href="#about" class="text-gray-400 hover:text-yellow-500 transition">About Us</a></li>
+                        <li><a href="#clients" class="text-gray-400 hover:text-yellow-500 transition">Clients</a></li>
+                        <li><a href="#contact" class="text-gray-400 hover:text-yellow-500 transition">Contact</a></li>
                     </ul>
                 </div>
 
@@ -1041,18 +881,18 @@ bg-gray-900 px-4 md:px-10 lg:px-16 rounded-10xl" >
                     <h4 class="text-xl font-bold mb-6 text-white">Contact Us</h4>
                     <ul class="space-y-4">
                         <li class="flex items-start">
-                            <i class="fas fa-map-marker-alt text-lakshya-gold mt-1.5 mr-3"></i>
+                            <i class="fas fa-map-marker-alt text-yellow-500 mt-1.5 mr-3"></i>
                             <span class="text-gray-400">123 Business Park, Sec-62,<br>Noida, UP - 201301</span>
                         </li>
                         <li class="flex items-center">
-                            <i class="fas fa-phone-alt text-lakshya-gold mr-3"></i>
-                            <a href="tel:+911234567890" class="text-gray-400 hover:text-lakshya-gold transition">+91 123
+                            <i class="fas fa-phone-alt text-yellow-500 mr-3"></i>
+                            <a href="tel:+911234567890" class="text-gray-400 hover:text-yellow-500 transition">+91 123
                                 456 7890</a>
                         </li>
                         <li class="flex items-center">
-                            <i class="fas fa-envelope text-lakshya-gold mr-3"></i>
+                            <i class="fas fa-envelope text-yellow-500 mr-3"></i>
                             <a href="mailto:info@lakshyasecurity.com"
-                                class="text-gray-400 hover:text-lakshya-gold transition">info@lakshyasecurity.com</a>
+                                class="text-gray-400 hover:text-yellow-500 transition">info@lakshyasecurity.com</a>
                         </li>
                     </ul>
                 </div>
@@ -1101,6 +941,19 @@ bg-gray-900 px-4 md:px-10 lg:px-16 rounded-10xl" >
             },
         });
     </script>
+    <script>
+  const slider = document.getElementById('slider');
+  const nextBtn = document.getElementById('nextBtn');
+  const prevBtn = document.getElementById('prevBtn');
+
+  nextBtn.addEventListener('click', () => {
+    slider.scrollBy({ left: 350, behavior: 'smooth' });
+  });
+
+  prevBtn.addEventListener('click', () => {
+    slider.scrollBy({ left: -350, behavior: 'smooth' });
+  });
+</script>
 </body>
 
 </html>
